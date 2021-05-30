@@ -67,6 +67,7 @@ a:hover {
 }
 
 p {
+  text-indent: 5%;
   background-color: inherit;
 }
 
