@@ -68,6 +68,9 @@ a:hover {
 
 p {
   text-indent: 5%;
+  text-align: justify;
+  display: table-row;
+  text-align-last: justify;
   background-color: inherit;
 }
 
