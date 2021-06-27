@@ -28,6 +28,7 @@
   --fg-a-two: #202020;
   --fg-a-three: #484848;
   --fg-code: #006600;
+  --fg-title-mini: #331D56;
   --bg-code: gainsboro;
   --menu-display: inline;
   --sidebar-height: 100%;
@@ -36,6 +37,9 @@
   --page-main-max-width: 50%;
   --page-main-padding: 0;
   --page-main-position: fixed;
+  --footer-align: left;
+  --navbar-page-align: left;
+  --title-align: left;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +51,7 @@
     --fg-a-two: lightgray;
     --fg-a-three: whitesmoke;
     --fg-code: #00FF99;
+    --fg-title-mini: #DCF5FF;
     --bg-code: #181818;
   }
 }
@@ -60,6 +65,9 @@
     --page-main-max-width: 100%;
     --page-main-padding: 0 5% 5% 5%;
     --page-main-position: relative;
+    --footer-align: center;
+    --navbar-page-align: center;
+    --title-align: center;
   }
 }
 
@@ -90,6 +98,8 @@ a:hover {
 
 p {
   background-color: inherit;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 p a {
@@ -122,6 +132,7 @@ footer {
   margin: var(--page-main-margin);
   padding: var(--page-main-padding);
   color: var(--fg-sub);
+  align-self: var(--footer-align);
 }
 
 hr {
@@ -182,6 +193,10 @@ table tbody tr:last-of-type {
     border-bottom: 1px solid var(--fg-title);
 }
 
+h2, h3 {
+  color: var(--fg-title-mini);
+}
+
 .title {
   color: var(--fg-title);
   font-size: 4rem;
@@ -190,10 +205,12 @@ table tbody tr:last-of-type {
 
 .title-post {
   font-size: 2rem;
+  text-align: var(--title-align);
 }
 
 .title-sub {
   color: var(--fg-sub);
+  text-align: var(--title-align);
 }
 
 .container {
@@ -223,6 +240,10 @@ table tbody tr:last-of-type {
   overflow-x: hidden;
 }
 
+.navbar-page {
+  text-align: var(--navbar-page-align);
+}
+
 .page-main {
   max-width: var(--page-main-max-width);
   margin: var(--page-main-margin);
@@ -235,6 +256,11 @@ table tbody tr:last-of-type {
 
 .list-title {
   font-size: 1.2rem;
+  text-align: var(--title-align);
+}
+
+.card {
+  text-align: center;
 }
 
 .card p {
