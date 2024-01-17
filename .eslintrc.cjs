@@ -7,6 +7,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-essential',
+    'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended',
   ],
   overrides: [
@@ -19,13 +20,21 @@ module.exports = {
         sourceType: 'script',
       },
     },
+    {
+      files: ['*.ts', '*.tsx', '*.js'],
+      parser: '@typescript-eslint/parser',
+    },
+    {
+      files: ['*.vue'],
+      parser: 'vue-eslint-parser',
+    },
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'vue'],
+  plugins: ['@typescript-eslint', 'eslint-plugin-tailwindcss', 'vue'],
   rules: {
     'vue/multi-word-component-names': 'off',
   },
