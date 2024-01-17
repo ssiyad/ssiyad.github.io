@@ -4,7 +4,7 @@
       <img src="https://ssiyad.com/photo.png" class="size-full object-cover" />
       <div class="absolute bottom-8 left-8">
         <div class="text-2xl font-medium text-white">Hello, I'm Sabu Siyad</div>
-        <div class="text-lg text-white">I love to code, build and break</div>
+        <div class="text-lg text-gray-100">I love to code, build and break</div>
       </div>
     </div>
     <div class="grid grid-cols-2">

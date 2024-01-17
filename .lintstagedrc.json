@@ -1,4 +1,7 @@
 {
+  "*.css": [
+    "prettier"
+  ],
   "*.ts": [
     "eslint"
   ],

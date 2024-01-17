@@ -3,7 +3,9 @@ export default {
   content: [],
   theme: {
     extend: {},
+    fontFamily: {
+      sans: ['WorkSans', 'sans-serif'],
+    },
   },
   plugins: [],
-}
-
+};
