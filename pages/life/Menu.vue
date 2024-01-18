@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute inset-8 flex size-max items-center gap-1 rounded bg-blue-100 p-4 shadow"
+    class="absolute inset-8 flex size-max items-center gap-1 rounded bg-blue-100 p-4 shadow dark:bg-indigo-900 dark:text-white"
   >
     <a class="flex items-center gap-1" href="/">
       <Icon name="lucide:home" />
