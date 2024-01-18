@@ -22,6 +22,9 @@
 </template>
 
 <script setup lang="ts">
+useHead({
+  title: 'Blog',
+});
 definePageMeta({
   layout: 'blog',
 });

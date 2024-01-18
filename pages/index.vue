@@ -33,4 +33,8 @@
 
 <script setup lang="ts">
 import links from '@/resources/links';
+
+useHead({
+  title: 'Home',
+});
 </script>
