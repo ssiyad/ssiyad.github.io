@@ -14,13 +14,19 @@
         <div class="text-lg text-gray-200">I love to code, build and break</div>
       </div>
     </div>
-    <div class="grid grid-cols-2">
+    <div
+      class="grid grid-cols-2"
+      :style="{
+        background:
+          'linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%)',
+      }"
+    >
       <a
         v-for="link in links"
         :key="link.url"
         :href="link.url"
         target="_blank"
-        class="flex size-full justify-center hover:bg-gray-100"
+        class="flex size-full justify-center hover:backdrop-brightness-95"
       >
         <span class="flex items-center gap-1 place-self-center">
           <Icon :name="link.icon" />
