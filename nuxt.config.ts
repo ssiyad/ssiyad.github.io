@@ -9,4 +9,9 @@ export default defineNuxtConfig({
     'nuxt-icon',
   ],
   pages: true,
+  content: {
+    highlight: {
+      theme: 'nord',
+    },
+  },
 });
