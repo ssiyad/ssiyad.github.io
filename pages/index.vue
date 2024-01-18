@@ -3,7 +3,10 @@
     class="grid h-screen grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1"
   >
     <div class="relative">
-      <img src="https://ssiyad.com/photo.png" class="size-full object-cover" />
+      <img
+        src="@/public/images/cover-image.png"
+        class="size-full object-cover"
+      />
       <div class="absolute bottom-8 left-8">
         <div class="text-2xl font-medium text-white">
           👋 Hello, I'm Sabu Siyad
