@@ -24,4 +24,9 @@ export default [
     url: 'https://t.me/ssiyad',
     icon: 'uil:telegram',
   },
+  {
+    name: 'Source',
+    url: 'https://github.com/ssiyad/ssiyad.github.io',
+    icon: 'uil:arrow',
+  },
 ];
