@@ -2,8 +2,8 @@
   <main>
     <ContentDoc #default="{ doc }">
       <article>
-        <div class="prose m-auto mt-4">
-          <h1 class="m-0 font-medium">
+        <div class="m-auto mt-4 max-w-prose">
+          <h1 class="m-0 text-2xl font-medium">
             {{ doc.title }}
           </h1>
           <hr class="mt-4" />

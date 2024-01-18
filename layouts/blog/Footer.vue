@@ -1,6 +1,6 @@
 <template>
   <div class="bg-blue-50 p-4">
-    <div class="prose m-auto">
+    <div class="m-auto max-w-prose">
       <div class="grid grid-cols-4 space-y-1">
         <a
           v-for="link in links"

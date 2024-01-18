@@ -1,6 +1,6 @@
 <template>
   <div class="bg-blue-50 p-4">
-    <div class="prose m-auto flex items-center gap-1">
+    <div class="m-auto flex max-w-prose items-center gap-1">
       <a class="flex items-center gap-1" href="/">
         <Icon name="uil:home-alt" />
         <span>Home</span>
