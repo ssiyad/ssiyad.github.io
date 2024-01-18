@@ -5,7 +5,8 @@ export default {
     extend: {},
     fontFamily: {
       sans: ['WorkSans', 'sans-serif'],
+      mono: ['JetBrainsMono', 'monospace'],
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
