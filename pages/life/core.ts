@@ -4,15 +4,13 @@ export function init() {
   setInterval(() => {
     if (inProgress.value || isPaused.value) return;
     inProgress.value = true;
-    for (let i = 0; i < census.value.length; i++) {
-      update(i);
+    const censusCopy = census.value.slice();
+    for (let idx = 0; idx < census.value.length; idx++) {
+      censusCopy[idx] = _(idx);
     }
+    census.value = censusCopy;
     inProgress.value = false;
   }, 500);
-}
-
-function update(idx: number) {
-  census.value[idx] = _(idx);
 }
 
 function exists(idx: number) {
