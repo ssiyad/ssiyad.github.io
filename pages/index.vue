@@ -1,6 +1,9 @@
 <template>
   <div
-    class="grid h-screen grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1"
+    class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-1"
+    :style="{
+      height: '100dvh',
+    }"
   >
     <div class="relative">
       <img src="/images/cover-image.png" class="size-full object-cover" />
