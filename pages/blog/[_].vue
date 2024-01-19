@@ -9,7 +9,7 @@
           <hr class="mt-4" />
         </div>
         <ContentRenderer
-          class="prose prose-slate m-auto my-4 prose-headings:w-max prose-headings:bg-amber-100 prose-headings:p-2 prose-headings:font-sans prose-headings:font-normal prose-headings:text-slate-800 prose-a:no-underline prose-pre:rounded-none"
+          class="prose prose-slate m-auto my-4 prose-headings:w-max prose-headings:bg-amber-100 prose-headings:p-2 prose-headings:font-sans prose-headings:font-normal prose-headings:text-slate-800 prose-a:no-underline prose-pre:rounded-none prose-pre:bg-blue-50"
           :value="doc"
         />
       </article>

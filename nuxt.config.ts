@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   pages: true,
   content: {
     highlight: {
-      theme: 'nord',
+      theme: 'github-light',
     },
   },
 });
