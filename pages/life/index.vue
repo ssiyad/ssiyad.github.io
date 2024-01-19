@@ -25,6 +25,16 @@
 import Cell from './Cell.vue';
 import Menu from './Menu.vue';
 
+useHead({
+  title: "Conway's Game of Life",
+  meta: [
+    {
+      name: 'description',
+      content: "Conway's Game of Life",
+    },
+  ],
+});
+
 const cellSize = 20;
 const columns = ref(20);
 const rows = ref(20);
