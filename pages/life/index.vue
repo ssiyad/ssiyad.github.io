@@ -1,40 +1,86 @@
 <template>
   <div>
-    <Menu />
+    <Menu v-model:is-paused="isPaused" :census="census" />
     <div
       class="grid"
       :style="{
-        gridTemplateColumns: `repeat(${data.columns}, minmax(0, 1fr))`,
-        gridTemplateRows: `repeat(${data.rows}, minmax(0, 1fr))`,
+        gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
+        gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))`,
       }"
     >
       <Cell
-        v-for="(v, index) in data.census"
+        v-for="(v, index) in census"
         :alive="v"
         :style="{
-          width: width / data.columns + 'px',
-          height: height / data.rows + 'px',
+          width: width / columns + 'px',
+          height: height / rows + 'px',
         }"
-        @toggle="() => (data.census[index] = !data.census[index])"
+        @toggle="() => (census[index] = !census[index])"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import data from './data';
-import { init } from './core';
 import Cell from './Cell.vue';
 import Menu from './Menu.vue';
 
 const cellSize = 20;
+const columns = ref(20);
+const rows = ref(20);
+const census = ref(new Array(columns.value * rows.value).fill(false));
+const inProgress = ref(false);
+const isPaused = ref(false);
 const { height, width } = useWindowSize();
+
 onMounted(() => {
-  data.columns = Math.trunc(width.value / cellSize);
-  data.rows = Math.trunc(height.value / cellSize);
-  data.census = new Array(data.columns * data.rows)
+  columns.value = Math.trunc(width.value / cellSize);
+  rows.value = Math.trunc(height.value / cellSize);
+  census.value = new Array(columns.value * rows.value)
     .fill(false)
     .map(() => Math.random() < 0.3);
   init();
 });
+
+function init() {
+  setInterval(() => {
+    if (inProgress.value || isPaused.value) return;
+    inProgress.value = true;
+    const censusCopy = census.value.slice();
+    for (let idx = 0; idx < census.value.length; idx++) {
+      censusCopy[idx] = _(idx);
+    }
+    census.value = censusCopy;
+    inProgress.value = false;
+  }, 500);
+}
+
+function exists(idx: number) {
+  return idx >= 0 && idx < census.value.length;
+}
+
+function _(idx: number) {
+  const neighbors = [
+    idx - columns.value - 1,
+    idx - columns.value,
+    idx - columns.value + 1,
+    idx - 1,
+    idx + 1,
+    idx + columns.value - 1,
+    idx + columns.value,
+    idx + columns.value + 1,
+  ];
+  const neighborsAlive = neighbors
+    .filter((i) => exists(i))
+    .filter((i) => census.value[i]).length;
+  const underpopulated = neighborsAlive < 2;
+  const overpopulated = neighborsAlive > 3;
+  const optimal = neighborsAlive === 3;
+
+  if (!census.value[idx]) {
+    return optimal;
+  }
+
+  return !underpopulated && !overpopulated;
+}
 </script>

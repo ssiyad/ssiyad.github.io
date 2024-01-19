@@ -18,18 +18,18 @@
     <Icon name="lucide:dot" />
     <div
       class="flex cursor-pointer items-center gap-1"
-      @click="() => (data.isPaused = !data.isPaused)"
+      @click="() => $emit('update:isPaused', !isPaused)"
     >
-      <Icon name="lucide:play" v-if="data.isPaused" />
+      <Icon name="lucide:play" v-if="isPaused" />
       <Icon name="lucide:pause" v-else />
       <span>
-        {{ data.isPaused ? 'Resume' : 'Pause' }}
+        {{ isPaused ? 'Resume' : 'Pause' }}
       </span>
     </div>
     <Icon name="lucide:dot" />
     <div
       class="flex cursor-pointer items-center gap-1"
-      @click="() => data.census.forEach((_, i) => (data.census[i] = false))"
+      @click="() => census.forEach((_, i) => (census[i] = false))"
     >
       <Icon name="lucide:refresh-ccw" />
       <span>Reset</span>
@@ -38,5 +38,18 @@
 </template>
 
 <script setup lang="ts">
-import data from './data';
+defineProps({
+  isPaused: {
+    type: Boolean,
+    required: true,
+  },
+  census: {
+    type: Array,
+    required: true,
+  },
+});
+
+defineEmits<{
+  (event: 'update:isPaused', value: boolean): void;
+}>();
 </script>
