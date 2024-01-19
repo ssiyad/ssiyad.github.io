@@ -18,18 +18,18 @@
     <Icon name="lucide:dot" />
     <div
       class="flex cursor-pointer items-center gap-1"
-      @click="() => (isPaused = !isPaused)"
+      @click="() => (data.isPaused = !data.isPaused)"
     >
-      <Icon name="lucide:play" v-if="isPaused" />
+      <Icon name="lucide:play" v-if="data.isPaused" />
       <Icon name="lucide:pause" v-else />
       <span>
-        {{ isPaused ? 'Resume' : 'Pause' }}
+        {{ data.isPaused ? 'Resume' : 'Pause' }}
       </span>
     </div>
     <Icon name="lucide:dot" />
     <div
       class="flex cursor-pointer items-center gap-1"
-      @click="() => census.forEach((_, i) => (census[i] = false))"
+      @click="() => data.census.forEach((_, i) => (data.census[i] = false))"
     >
       <Icon name="lucide:refresh-ccw" />
       <span>Reset</span>
@@ -38,5 +38,5 @@
 </template>
 
 <script setup lang="ts">
-import { census, isPaused } from './data';
+import data from './data';
 </script>

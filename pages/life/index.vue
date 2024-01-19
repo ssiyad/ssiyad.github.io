@@ -4,25 +4,25 @@
     <div
       class="grid"
       :style="{
-        gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
-        gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))`,
+        gridTemplateColumns: `repeat(${data.columns}, minmax(0, 1fr))`,
+        gridTemplateRows: `repeat(${data.rows}, minmax(0, 1fr))`,
       }"
     >
       <Cell
-        v-for="(v, index) in census"
+        v-for="(v, index) in data.census"
         :alive="v"
         :style="{
-          width: width / columns + 'px',
-          height: height / rows + 'px',
+          width: width / data.columns + 'px',
+          height: height / data.rows + 'px',
         }"
-        @toggle="() => (census[index] = !census[index])"
+        @toggle="() => (data.census[index] = !data.census[index])"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { columns, rows, cells, census } from './data';
+import data from './data';
 import { init } from './core';
 import Cell from './Cell.vue';
 import Menu from './Menu.vue';
@@ -30,9 +30,9 @@ import Menu from './Menu.vue';
 const cellSize = 20;
 const { height, width } = useWindowSize();
 onMounted(() => {
-  columns.value = Math.trunc(width.value / cellSize);
-  rows.value = Math.trunc(height.value / cellSize);
-  census.value = new Array(cells.value)
+  data.columns = Math.trunc(width.value / cellSize);
+  data.rows = Math.trunc(height.value / cellSize);
+  data.census = new Array(data.columns * data.rows)
     .fill(false)
     .map(() => Math.random() < 0.3);
   init();

@@ -1,41 +1,41 @@
-import { columns, census, inProgress, isPaused } from './data';
+import data from './data';
 
 export function init() {
   setInterval(() => {
-    if (inProgress.value || isPaused.value) return;
-    inProgress.value = true;
-    const censusCopy = census.value.slice();
-    for (let idx = 0; idx < census.value.length; idx++) {
+    if (data.inProgress || data.isPaused) return;
+    data.inProgress = true;
+    const censusCopy = data.census.slice();
+    for (let idx = 0; idx < data.census.length; idx++) {
       censusCopy[idx] = _(idx);
     }
-    census.value = censusCopy;
-    inProgress.value = false;
+    data.census = censusCopy;
+    data.inProgress = false;
   }, 500);
 }
 
 function exists(idx: number) {
-  return idx >= 0 && idx < census.value.length;
+  return idx >= 0 && idx < data.census.length;
 }
 
 function _(idx: number) {
   const neighbors = [
-    idx - columns.value - 1,
-    idx - columns.value,
-    idx - columns.value + 1,
+    idx - data.columns - 1,
+    idx - data.columns,
+    idx - data.columns + 1,
     idx - 1,
     idx + 1,
-    idx + columns.value - 1,
-    idx + columns.value,
-    idx + columns.value + 1,
+    idx + data.columns - 1,
+    idx + data.columns,
+    idx + data.columns + 1,
   ];
   const neighborsAlive = neighbors
     .filter((i) => exists(i))
-    .filter((i) => census.value[i]).length;
+    .filter((i) => data.census[i]).length;
   const underpopulated = neighborsAlive < 2;
   const overpopulated = neighborsAlive > 3;
   const optimal = neighborsAlive === 3;
 
-  if (!census.value[idx]) {
+  if (!data.census[idx]) {
     return optimal;
   }
 
