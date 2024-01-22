@@ -18,7 +18,7 @@ renders JavaScript in a polished window. That being said, if you’re a JavaScri
 please ignore the rest of this post, and wave your hands as you close this window. If
 you’re going to continue reading, let me welcome you to the problem and the reasons for it.
 
-## The Backstory
+### The Backstory
 
 ```javascript
 > a = 1
@@ -71,7 +71,7 @@ case, we have a different condition that says,
 treated as the same value. If either operand is `NaN`, return `false`.
 - `Boolean`: return `true` only if operands are both `true` or both `false`.
 
-## The Problem
+### The Problem
 
 We know that,
 
@@ -114,7 +114,7 @@ epoch.* JavaScript use `Date.prototype.valueOf()` behind the scenes to convert a
 to a primitive value. But we can use `Date.prototype.getTime()` since `Date.prototype.valueOf()`
 is usually called internally by JavaScript and not explicitly in code. 
 
-## The Solution
+### The Solution
 
 Now we know what was wrong, and how we should actually equality check date objects
 
@@ -123,7 +123,7 @@ Now we know what was wrong, and how we should actually equality check date objec
 true
 ```
 
-## That's it!
+### That's it!
 
 JavaScript is a weird programming language to learn, but it's also a fun experience. So if you
 decide to try it, like Veronika, I'd recommend you to play with its core, there is a lot to

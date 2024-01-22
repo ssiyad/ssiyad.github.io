@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['WorkSans', 'sans-serif'],
       mono: ['JetBrainsMono', 'monospace'],
+      sans: ['WorkSans', 'sans-serif'],
+      serif: ['Domine', 'serif'],
     },
   },
   plugins: [require('@tailwindcss/typography')],

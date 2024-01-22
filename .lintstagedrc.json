@@ -3,9 +3,9 @@
     "prettier"
   ],
   "*.ts": [
-    "eslint"
+    "eslint --fix"
   ],
   "*.vue": [
-    "eslint"
+    "eslint --fix"
   ]
 }
