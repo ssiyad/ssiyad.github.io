@@ -1,7 +1,9 @@
 <template>
   <div class="px-8 py-4">
     <div class="flex items-center justify-between">
-      <a href="/" class="font-mono text-xl font-bold italic">&</a>
+      <a href="/">
+        <img src="/icon-light.svg" class="size-7" />
+      </a>
       <div class="flex items-center gap-1">
         <div
           class="flex items-center gap-1"
@@ -10,7 +12,7 @@
         >
           <Tooltip :text="link.name">
             <a :href="link.url">
-              <Icon :name="link.icon" />
+              <Icon :name="link.icon" class="text-xl" />
             </a>
           </Tooltip>
           <Icon name="lucide:dot" v-if="idx + 1 < links.length" />
