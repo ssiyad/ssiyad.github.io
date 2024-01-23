@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="p-4 sm:px-8">
     <Header />
-    <div class="grow">
+    <div class="mt-4">
       <slot />
     </div>
   </div>

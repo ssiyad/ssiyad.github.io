@@ -9,7 +9,7 @@
           <hr class="mt-4" />
         </div>
         <ContentRenderer
-          class="prose prose-slate mx-auto my-4 prose-pre:bg-slate-100 prose-a:prose-headings:no-underline"
+          class="prose prose-slate mx-auto my-4 prose-a:prose-headings:no-underline prose-pre:bg-slate-100"
           :value="doc"
         />
       </article>
@@ -19,6 +19,6 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'blog',
+  layout: 'default',
 });
 </script>

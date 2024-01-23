@@ -26,6 +26,6 @@ useHead({
   title: 'Blog',
 });
 definePageMeta({
-  layout: 'blog',
+  layout: 'default',
 });
 </script>

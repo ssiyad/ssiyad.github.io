@@ -1,5 +1,5 @@
 <template>
-  <div class="px-8 py-4">
+  <div>
     <div class="flex items-center justify-between">
       <a href="/">
         <img src="/icon-light.svg" class="size-7" />
