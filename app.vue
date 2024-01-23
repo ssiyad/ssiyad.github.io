@@ -7,6 +7,9 @@
 </template>
 
 <script setup lang="ts">
+useFavicon(() =>
+  usePreferredDark().value ? '/icon-dark.svg' : '/icon-light.svg',
+);
 useSeoMeta({
   ogTitle: 'Sabu Siyad',
   ogDescription: 'I love to code, build and break',
