@@ -8,9 +8,11 @@
           v-for="(link, idx) in links"
           :key="link.url"
         >
-          <a :href="link.url">
-            <Icon :name="link.icon" />
-          </a>
+          <Tooltip :text="link.name">
+            <a :href="link.url">
+              <Icon :name="link.icon" />
+            </a>
+          </Tooltip>
           <Icon name="lucide:dot" v-if="idx + 1 < links.length" />
         </div>
       </div>
