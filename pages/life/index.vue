@@ -22,17 +22,16 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, ref } from 'vue';
 import Cell from './Cell.vue';
 import Menu from './Menu.vue';
 
 useHead({
   title: "Conway's Game of Life",
-  meta: [
-    {
-      name: 'description',
-      content: "Conway's Game of Life",
-    },
-  ],
+});
+useSeoMeta({
+  title: "Conway's Game of Life",
+  description: "Conway's Game of Life",
 });
 
 const cellSize = 20;
