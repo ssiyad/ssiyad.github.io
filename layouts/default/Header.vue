@@ -2,7 +2,7 @@
   <div>
     <div class="flex items-center justify-between">
       <a href="/">
-        <img src="/icon-light.svg" class="size-7" />
+        <img src="/icon-light.svg" class="size-6" />
       </a>
       <div class="flex items-center gap-1">
         <div

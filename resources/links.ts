@@ -5,11 +5,6 @@ export default [
     icon: 'uil:book-open',
   },
   {
-    name: 'Music',
-    url: 'https://open.spotify.com/playlist/5ONWkSGfSjWjR0OAAotkKg?si=a52dbd96e0e04878&nd=1&dlsi=6e6410d820d2401b',
-    icon: 'uil:music',
-  },
-  {
     name: 'GitHub',
     url: 'https://github.com/ssiyad',
     icon: 'uil:github',
@@ -23,10 +18,5 @@ export default [
     name: 'Telegram',
     url: 'https://t.me/ssiyad',
     icon: 'uil:telegram',
-  },
-  {
-    name: 'Source',
-    url: 'https://github.com/ssiyad/ssiyad.github.io',
-    icon: 'uil:arrow',
   },
 ];
