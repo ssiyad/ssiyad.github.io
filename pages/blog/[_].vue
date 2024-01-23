@@ -19,6 +19,6 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: 'default',
+  layout: 'basic',
 });
 </script>
