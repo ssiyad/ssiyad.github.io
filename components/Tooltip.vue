@@ -2,7 +2,7 @@
   <div class="group relative flex flex-col items-center">
     <slot />
     <div
-      class="absolute top-0 mt-6 hidden flex-col items-center group-hover:flex"
+      class="absolute top-0 mt-8 hidden flex-col items-center group-hover:flex"
     >
       <div class="-mb-2 size-3 rotate-45 bg-black"></div>
       <span
