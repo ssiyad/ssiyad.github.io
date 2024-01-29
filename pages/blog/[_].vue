@@ -1,9 +1,9 @@
 <template>
   <main>
     <ContentDoc #default="{ doc }">
-      <article>
+      <article class="m-4">
         <div class="m-auto mt-4 max-w-prose">
-          <h1 class="font-serif m-0 text-2xl font-medium">
+          <h1 class="m-0 font-serif text-2xl font-medium">
             {{ doc.title }}
           </h1>
           <hr class="mt-4" />
