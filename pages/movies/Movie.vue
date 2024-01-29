@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <img :src="image" :alt="title" class="h-80 w-60 object-cover" />
+    <img :src="image" :alt="title" class="size-full object-cover" />
     <div
       class="absolute bottom-0 w-full p-2 backdrop-blur backdrop-brightness-75"
     >

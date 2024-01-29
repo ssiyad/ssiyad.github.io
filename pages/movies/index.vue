@@ -1,7 +1,7 @@
 <template>
   <main>
-    <ContentList path="/movies" v-slot="{ list: movies }">
-      <div class="flex flex-wrap">
+    <ContentList v-slot="{ list: movies }" path="/movies">
+      <div class="grid grid-cols-1 sm:grid-cols-6">
         <Movie
           v-for="movie in movies.sort(function (a, b) {
             return dayjs().diff(a.watched_on) - dayjs().diff(b.watched_on);
