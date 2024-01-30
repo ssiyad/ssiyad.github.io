@@ -18,9 +18,8 @@ Outside of programming, I enjoy reading, football and travelling. I occasionally
 take pictures and post them on
 [Instagram](https://www.instagram.com/sabu.siyad/).
 
-If you're interested in music, check out my
-[playlist](https://open.spotify.com/playlist/5ONWkSGfSjWjR0OAAotkKg?si=a52dbd96e0e04878&nd=1&dlsi=6e6410d820d2401b).
-It might actually be an accurate description of myself than I could ever write.
+If you're interested in music, check out my [playlist](/music). It might
+actually be an accurate description of myself than I could ever write.
 
 ---
 
