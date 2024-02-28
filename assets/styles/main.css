@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'JetBrainsMono';
-  src: url('/fonts/JetBrainsMono.ttf');
+  font-family: 'GeistMono';
+  src: url('/fonts/GeistMono.woff2') format('woff2');
 }
 
 @font-face {
