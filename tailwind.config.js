@@ -5,7 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       mono: ['JetBrainsMono', 'monospace'],
-      sans: ['WorkSans', 'sans-serif'],
+      sans: ['Geist', 'sans-serif'],
       serif: ['Domine', 'serif'],
     },
   },
