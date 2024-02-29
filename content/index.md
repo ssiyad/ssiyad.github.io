@@ -1,7 +1,6 @@
 ---
-title: Home
+title: Sabu Siyad
 ---
-## Sabu Siyad
 Hey, I am Sabu Siyad, a professional software engineer.
 
 Writing reliable, testable and useful code is where my passion lies. I love to
@@ -17,9 +16,6 @@ memory safety, hence I believe it is the right road to go forward.
 Outside of programming, I enjoy reading, football and travelling. I occasionally
 take pictures and post them on
 [Instagram](https://www.instagram.com/sabu.siyad/).
-
-If you're interested in music, check out my [playlist](/music). It might
-actually be an accurate description of myself than I could ever write.
 
 ---
 
