@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto border-b pb-4">
-    <div class="mx-auto mb-4 w-max">
+    <div class="mx-auto mb-4 w-max lg:fixed lg:left-6 lg:top-6">
       <a href="/">
         <Logo />
       </a>
