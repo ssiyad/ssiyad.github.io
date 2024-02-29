@@ -14,4 +14,15 @@ export default defineNuxtConfig({
       theme: 'github-light',
     },
   },
+  routeRules: {
+    '/meet': {
+      redirect: 'https://meet.google.com/cxg-nvum-xxf',
+    },
+    '/music': {
+      redirect: 'https://open.spotify.com/playlist/5ONWkSGfSjWjR0OAAotkKg',
+    },
+    '/resume': {
+      redirect: '/docs/resume.pdf',
+    },
+  },
 });
