@@ -4,6 +4,6 @@
 
 @layer utilities {
 	.prose-custom {
-		@apply prose leading-loose underline-offset-8 prose-a:prose-headings:no-underline prose-a:prose-headings:before:mr-2 prose-a:prose-headings:before:content-['#']
+		@apply prose leading-loose underline-offset-8 prose-headings:text-base prose-a:prose-headings:no-underline prose-a:prose-headings:border-b-2 prose-a:prose-headings:border-gray-300 prose-a:prose-headings:pb-2 prose-a:prose-headings:before:mr-2 prose-a:prose-headings:before:content-['#']
 	}
 }
