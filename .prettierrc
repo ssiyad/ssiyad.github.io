@@ -3,7 +3,11 @@
   "singleQuote": true,
   "tabWidth": 2,
   "plugins": [
+    "prettier-plugin-tailwindcss",
     "prettier-plugin-classnames",
-    "prettier-plugin-tailwindcss"
+    "prettier-plugin-merge"
+  ],
+  "customAttributes": [
+    "class"
   ]
 }
