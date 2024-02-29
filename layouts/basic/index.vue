@@ -1,7 +1,9 @@
 <template>
-  <div class="p-4">
+  <div class="mx-auto max-w-prose p-4">
     <Header />
-    <slot />
+    <div class="my-4">
+      <slot />
+    </div>
   </div>
 </template>
 

@@ -1,9 +1,7 @@
 <template>
   <main>
     <ContentDoc v-slot="{ doc }">
-      <main class="m-4">
-        <ContentRenderer class="prose-custom mx-auto" :value="doc" />
-      </main>
+      <ContentRenderer class="prose-custom mx-auto" :value="doc" />
     </ContentDoc>
   </main>
 </template>

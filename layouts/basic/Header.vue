@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto w-max border-b pb-4">
+  <div class="mx-auto border-b pb-4">
     <div class="mx-auto mb-4 w-max">
       <a href="/">
         <Logo />

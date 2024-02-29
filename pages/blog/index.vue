@@ -1,8 +1,8 @@
 <template>
   <main>
     <ContentList v-slot="{ list }" path="/blog">
-      <ul class="prose-custom mx-auto my-4 space-y-4 prose-a:no-underline">
-        <li v-for="item in list" :key="item._path">
+      <div class="prose-custom mx-auto my-4 space-y-4 prose-a:no-underline">
+        <div v-for="item in list" :key="item._path">
           <a
             class="mb-2 block w-max border-b-2 pb-2 font-medium"
             :href="item._path"
@@ -11,8 +11,8 @@
             {{ item.title }}
           </a>
           <div>{{ item.description }}</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </ContentList>
   </main>
 </template>
