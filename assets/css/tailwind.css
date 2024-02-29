@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.prose-custom {
+		@apply prose leading-loose underline-offset-8 prose-a:prose-headings:no-underline prose-a:prose-headings:before:mr-2 prose-a:prose-headings:before:content-['#']
+	}
+}
