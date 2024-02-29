@@ -1,22 +1,14 @@
 <template>
   <main>
-    <ContentList path="/blog" v-slot="{ list }">
-      <div class="m-auto my-4 max-w-prose space-y-2">
-        <div
-          v-for="article in list"
-          :key="article._path"
-          class="cursor-pointer bg-gray-100 p-4 hover:bg-gray-200"
-        >
-          <a :href="article._path">
-            <div class="font-medium">
-              {{ article.title }}
-            </div>
-            <div class="mt-2 text-slate-700">
-              {{ article.description }}
-            </div>
+    <ContentList v-slot="{ list }" path="/blog">
+      <ul class="prose-custom mx-auto my-4 list-outside list-disc space-y-4">
+        <li v-for="item in list" :key="item._path">
+          <a class="font-medium underline" :href="item._path">
+            {{ item.title }}
           </a>
-        </div>
-      </div>
+          <div>{{ item.description }}</div>
+        </li>
+      </ul>
     </ContentList>
   </main>
 </template>
