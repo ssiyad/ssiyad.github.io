@@ -1,16 +1,14 @@
 <template>
   <main>
     <ContentList v-slot="{ list }" path="/blog">
-      <div class="prose-custom mx-auto my-4 space-y-4 prose-a:no-underline">
+      <div class="prose-custom mx-auto">
         <div v-for="item in list" :key="item._path">
-          <a
-            class="mb-2 block w-max border-b-2 pb-2 font-medium"
-            :href="item._path"
-          >
-            <span class="mr-1">#</span>
-            {{ item.title }}
-          </a>
-          <div>{{ item.description }}</div>
+          <h2>
+            <a :href="item._path">
+              {{ item.title }}
+            </a>
+          </h2>
+          <div class="line-clamp-3">{{ item.description }}</div>
         </div>
       </div>
     </ContentList>
