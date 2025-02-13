@@ -57,6 +57,6 @@ definePageMeta({
 
 <style scoped>
 .highlight {
-  @apply font-medium text-neutral-900;
+  @apply font-medium text-neutral-900 dark:invert;
 }
 </style>

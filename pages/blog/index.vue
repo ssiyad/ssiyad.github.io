@@ -9,7 +9,7 @@
             </a>
           </h2>
           <div class="line-clamp-3">{{ post.description }}</div>
-          <div class="text-sm text-neutral-500">
+          <div class="text-sm text-neutral-500 dark:invert">
             {{ format(post.date, 'do MMMM, uuuu') }}
           </div>
         </div>

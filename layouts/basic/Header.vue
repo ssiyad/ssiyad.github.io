@@ -16,7 +16,7 @@
       >
         <a
           :href="link.url"
-          class="text-sm text-neutral-700 underline-offset-4 hover:underline"
+          class="text-sm text-neutral-700 underline-offset-4 hover:underline dark:invert"
         >
           {{ link.name }}
         </a>
