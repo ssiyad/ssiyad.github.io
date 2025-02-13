@@ -24,7 +24,7 @@ miss is my willingness to spend time to read and write. Hopefully I may turn it
 around this time. Mind you, this is not first time I tried to restart my habits
 but I really hope this is the last.
 
-I made some changes to this very website. I may not look prettier to you but
+I made some changes to this very website. It may not look prettier to you but
 does to me, and I am happy with that :) I learned React in that past 4 months.
 Its neither better nor worse than Vue. I kinda like it at times but not always.
 More on it later.
