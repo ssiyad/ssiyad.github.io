@@ -2,13 +2,21 @@
   <main>
     <ContentList v-slot="{ list }" path="/blog">
       <div class="prose-custom mx-auto">
-        <div v-for="item in list" :key="item._path">
+        <div
+          v-for="post in list.sort(
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+          )"
+          :key="post._id"
+        >
           <h2>
-            <a :href="item._path">
-              {{ item.title }}
+            <a :href="post._path">
+              {{ post.title }}
             </a>
           </h2>
-          <div class="line-clamp-3">{{ item.description }}</div>
+          <div class="line-clamp-3">{{ post.description }}</div>
+          <div class="w-max text-neutral-500">
+            Posted on {{ format(post.date, 'do MMMM, uuuu') }}
+          </div>
         </div>
       </div>
     </ContentList>
@@ -16,9 +24,12 @@
 </template>
 
 <script setup lang="ts">
+import { format } from 'date-fns';
+
 useHead({
   title: 'Blog',
 });
+
 definePageMeta({
   layout: 'basic',
 });
