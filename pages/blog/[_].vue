@@ -3,7 +3,7 @@
     <ContentDoc v-slot="{ doc }">
       <article>
         <h1
-          class="relative -left-4 w-max border-b-2 border-gray-600 pb-1 font-medium"
+          class="relative -left-4 w-max border-b-2 border-neutral-600 pb-1 font-medium"
         >
           <span class="mr-1">#</span>
           {{ doc.title }}

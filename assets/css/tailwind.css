@@ -12,12 +12,12 @@
 		prose-h4:font-medium prose-h4:before:content-['###'] prose-h4:before:mr-2 prose-h4:relative prose-h4:-left-8
 		prose-h5:font-medium prose-h5:before:content-['####'] prose-h5:before:mr-2 prose-h5:relative prose-h5:-left-10
 		prose-a:prose-headings:border-b-2
-		prose-a:prose-headings:border-gray-600
+		prose-a:prose-headings:border-neutral-600
 		prose-a:no-underline
 		prose-a:prose-headings:pb-2
 		prose-a:border-b-2
 		prose-a:pb-1
-		prose-a:border-gray-200
+		prose-a:border-neutral-200
 		prose-headings:text-base
 		underline-offset-8
 	}
