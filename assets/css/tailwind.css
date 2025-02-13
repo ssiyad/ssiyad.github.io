@@ -7,8 +7,10 @@
 		@apply
 		leading-loose
 		prose
-		prose-a:prose-headings:before:content-['#']
-		prose-a:prose-headings:before:mr-2
+		prose-h2:font-medium prose-h2:before:content-['#'] prose-h2:before:mr-2 prose-h2:relative prose-h2:-left-4
+		prose-h3:font-medium prose-h3:before:content-['##'] prose-h3:before:mr-2 prose-h3:relative prose-h3:-left-6
+		prose-h4:font-medium prose-h4:before:content-['###'] prose-h4:before:mr-2 prose-h4:relative prose-h4:-left-8
+		prose-h5:font-medium prose-h5:before:content-['####'] prose-h5:before:mr-2 prose-h5:relative prose-h5:-left-10
 		prose-a:prose-headings:border-b-2
 		prose-a:prose-headings:border-gray-600
 		prose-a:no-underline
