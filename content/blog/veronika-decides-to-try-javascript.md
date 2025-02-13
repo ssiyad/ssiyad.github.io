@@ -1,6 +1,6 @@
 ---
 title: Veronika Decides To Try JavaScript
-description: A retrospective on JavaScript and its uncanny methods to see how it delivers a developer friendly environment
+description: A retrospective on JavaScript and its uncanny methods to see how it delivers a developer friendly environment.
 date: 2022-08-23T20:52:29+05:30
 ---
 ## Veronika Decides To Try JavaScript 

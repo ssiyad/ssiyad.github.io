@@ -1,6 +1,6 @@
 ---
 title: ClubHouse Sucks
-description: Why ClubHouse the trending new social media platform is not user friendly
+description: Why ClubHouse the trending new social media platform is not user friendly.
 date: 2022-08-23T20:37:30+05:30
 ---
 ## ClubHouse Sucks
