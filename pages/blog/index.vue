@@ -2,12 +2,7 @@
   <main>
     <ContentList v-slot="{ list }" path="/blog">
       <div class="prose-custom mx-4 sm:mx-auto">
-        <div
-          v-for="post in list.sort(
-            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
-          )"
-          :key="post._id"
-        >
+        <div v-for="post in list.sort(sortByDate)" :key="post._id">
           <h2>
             <a :href="post._path">
               {{ post.title }}
@@ -33,4 +28,8 @@ useHead({
 definePageMeta({
   layout: 'basic',
 });
+
+function sortByDate(a, b) {
+  return new Date(b.date).getTime() - new Date(a.date).getTime();
+}
 </script>
