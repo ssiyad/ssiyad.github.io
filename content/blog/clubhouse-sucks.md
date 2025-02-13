@@ -7,7 +7,7 @@ If you don't know what clubouse is, check out:
 - [Clubhouse (app) - Wikipedia](https://en.wikipedia.org/wiki/Clubhouse_(app))
 - [Clubhouse: Drop-in audio chat](https://www.joinclubhouse.com/)
 
-### Inherent Problems
+## Inherent Problems
 
 When I look back at social media platforms I been a part of, it makes me think if
 clubhouse will ever be able to solve it's inherent problems of being an online
@@ -26,7 +26,7 @@ To quote Martin Garrix,
 clubhouse managed to fix this to a point, but not in a perfect way. Something like
 strict verification using volunteers/staff would have been a lot better.
 
-### Freshness
+## Freshness
 
 A lot of people I know praise clubhouse for it's freshness. I don't get it. As far
 as I understand, clubhouse is a modern-podcast platform aka the voice chat. The idea
@@ -38,7 +38,7 @@ text channels, roles and much more good moderation. You should give it a try if 
 didn't already. That being said, _clubhouse is old wine in new bottle_. There is
 nothing new as advertised.
 
-### Privacy (or Anonymity)
+## Privacy (or Anonymity)
 
 It should be an important aspect of every communication medium in today's world, or so I
 believe. No one would know what happens in China if anonymity was not important.
@@ -61,7 +61,7 @@ could follow me and spy me like ever before.
 Thus, I suspect if clubhouse have any preference for privacy or anonymity and I very
 much hate that.
 
-### Synchronicity
+## Synchronicity
 
 From Wikipedia:
 > synchronous: At the same time, at the same frequency
@@ -91,7 +91,7 @@ I'd also say, clubhouse success is a side effect of recent situations where a lo
 us are unable interact with the society around us, which leaves a big gaps in our
 daily schedule and let us commit to things we disagreed to before.
 
-### Sound as a medium
+## Sound as a medium
 
 I very much like to listen to things, but I like to read more. So my views are biased
 and may make no sense to you, beware. We all value our time. Me too. I'd love it when
@@ -108,7 +108,7 @@ possible, it will be very harder to cross reference than in case of text.
 Also, me being an introvert, would like to participate in a way other than speaking, and
 an absence of such feature makes me think if clubhouse is not for my kind.
 
-### Does it really suck?
+## Does it really suck?
 
 I think so. But in the end, it is just my opinion. Yours may differ and I'm perfectly okay
 with that. I'll encourage you to contribute more and more the society we live in. It
