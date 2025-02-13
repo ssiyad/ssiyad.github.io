@@ -2,7 +2,7 @@
   <main>
     <ContentDoc v-slot="{ doc }">
       <article>
-        <ContentRenderer class="prose-custom mx-auto" :value="doc" />
+        <ContentRenderer class="prose-custom mx-4 sm:mx-auto" :value="doc" />
       </article>
     </ContentDoc>
   </main>

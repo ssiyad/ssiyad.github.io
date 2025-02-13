@@ -1,7 +1,7 @@
 <template>
   <main>
     <ContentList v-slot="{ list }" path="/blog">
-      <div class="prose-custom mx-auto">
+      <div class="prose-custom mx-4 sm:mx-auto">
         <div
           v-for="post in list.sort(
             (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
