@@ -9,8 +9,8 @@
             </a>
           </h2>
           <div class="line-clamp-3">{{ post.description }}</div>
-          <div class="w-max text-neutral-500">
-            Posted on {{ format(post.date, 'do MMMM, uuuu') }}
+          <div class="text-sm text-neutral-500">
+            {{ format(post.date, 'do MMMM, uuuu') }}
           </div>
         </div>
       </div>
