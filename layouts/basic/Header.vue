@@ -20,7 +20,11 @@
         >
           {{ link.name }}
         </a>
-        <Icon v-if="idx + 1 < links.length" name="lucide:dot" />
+        <Icon
+          v-if="idx + 1 < links.length"
+          name="lucide:dot"
+          class="dark:invert"
+        />
       </div>
     </div>
   </div>
