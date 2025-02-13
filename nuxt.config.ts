@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   pages: true,
   content: {
     highlight: {
-      theme: 'github-light',
+      theme: 'catppuccin-mocha',
     },
   },
   routeRules: {
