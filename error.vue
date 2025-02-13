@@ -1,5 +1,5 @@
 <template>
-  <div class="size-screen flex items-center justify-center">
+  <div class="h-screen w-screen flex items-center justify-center">
     <div class="prose-custom">
       <div class="font-medium">{{ error.statusCode }} {{ error.message }}</div>
       <div v-if="error.stack" v-html="error.stack" />
