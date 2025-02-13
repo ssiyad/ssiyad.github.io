@@ -8,7 +8,6 @@ If you don't know what ClubHouse is, check out:
 - [Clubhouse: Drop-in audio chat](https://www.joinclubhouse.com/)
 
 ## Inherent Problems
-
 When I look back at social media platforms I been a part of, it makes me think if
 ClubHouse will ever be able to solve it's inherent problems of being an online
 platform. Provided, ClubHouse is still in beta and registration is solely based on
@@ -27,7 +26,6 @@ ClubHouse managed to fix this to a point, but not in a perfect way. Something li
 strict verification using volunteers/staff would have been a lot better.
 
 ## Freshness
-
 A lot of people I know praise ClubHouse for it's freshness. I don't get it. As far
 as I understand, ClubHouse is a modern-podcast platform aka the voice chat. The idea
 of podcasts are very well known and there are multiple instant messengers with voice
@@ -39,7 +37,6 @@ didn't already. That being said, _ClubHouse is old wine in new bottle_. There is
 nothing new as advertised.
 
 ## Privacy (or Anonymity)
-
 It should be an important aspect of every communication medium in today's world, or so I
 believe. No one would know what happens in China if anonymity was not important.
 [Arab Spring](https://en.wikipedia.org/wiki/Arab_Spring) wouldn't have happened. No news
@@ -62,7 +59,6 @@ Thus, I suspect if ClubHouse have any preference for privacy or anonymity and I 
 much hate that.
 
 ## Synchronicity
-
 From Wikipedia:
 > synchronous: At the same time, at the same frequency
 
@@ -92,7 +88,6 @@ us are unable interact with the society around us, which leaves a big gaps in ou
 daily schedule and let us commit to things we disagreed to before.
 
 ## Sound as a medium
-
 I very much like to listen to things, but I like to read more. So my views are biased
 and may make no sense to you, beware. We all value our time. Me too. I'd love it when
 people actually prepare beforehand and talk about about things clear and fair.
@@ -109,10 +104,8 @@ Also, me being an introvert, would like to participate in a way other than speak
 an absence of such feature makes me think if ClubHouse is not for my kind.
 
 ## Does it really suck?
-
 I think so. But in the end, it is just my opinion. Yours may differ and I'm perfectly okay
 with that. I'll encourage you to contribute more and more the society we live in. It
 just feels that it is not for me.
 
 Regards.
-
