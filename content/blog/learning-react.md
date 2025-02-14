@@ -58,17 +58,17 @@ go at something I couldn't crack before.
 I already told you that I was fairly comfortable with Vue. I'll tell you about
 that later, in another post, maybe. But the exposure to one frontend web
 framework taught me something. The way you think when writing user facing
-software is different from that of backend (hidden) frameworks. Honestly, we are
-the only industry where customers are called users and a for a good reason.
-People use our product, and we use them. They are our lab rats. They are idiots.
-They are numbers. A common man (or woman) does not care how good your code is.
-They don't care if your method is performant. They want to see things. They want
-things in the way they expect it to be. You can try it yourself. If you are a
-backend developer with zero interest in user facing stuff, build something you
-think you are efficient and give them to people for free. You can have plenty of
-never expecting feedback quickly. I would say it is important to touch grass
-once in a while, and I did, with Vue. And it made my React learning a little bit
-better.
+software is different from that of backend (hidden) frameworks. Honestly, _we
+are the only industry where customers are called users_ and a for a good reason.
+_People use our product, and we use them. They are our lab rats. They are
+idiots. They are numbers_. A common man (or woman) does not care how good your
+code is. They don't care if your method is performant. They want to see things.
+They want things in the way they expect it to be. You can try it yourself. If
+you are a backend developer with zero interest in user facing stuff, build
+something you think you are efficient and give them to people for free. You can
+have plenty of never expecting feedback quickly. I would say it is important to
+touch grass once in a while, and I did, with Vue. And it made my React learning
+a little bit better.
 
 ## CSS
 I hated CSS. It never made sense to me. But at some point in my career, I was
