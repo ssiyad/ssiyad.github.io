@@ -3,7 +3,6 @@ title: Spacing Hard
 description: I casually tried to clean my laptop space bar and it backfired.
 date: 2025-02-22T05:29:32.222Z
 ---
-## Spacing Hard
 This is going to be short. So I wake early in the morning, had breakfast and
 opened my laptop. The machine is a 2020 Macbook Air M1. It is a beast when it
 comes to performance and reliability. Me, an avid open source enthusiast

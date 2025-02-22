@@ -3,7 +3,6 @@ title: Breath In
 description: Yet another attempt to restart a good old habit.
 date: 2025-02-13T18:41:08.506Z
 ---
-## Breath In
 This is my first time writing anything in a span of an year. I rarely wrote
 anything in paper in this decade. When I did, it was mostly office work or
 chores. I can even say I forgot the pleasure of having a pen on paper. It used

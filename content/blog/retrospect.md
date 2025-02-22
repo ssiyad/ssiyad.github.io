@@ -3,7 +3,6 @@ title: Retrospect
 description: Would you prefer if people only talked about the necessary bits, leaving any emotion out of it? Regardless of your answer, it is most effective communication method I know.
 date: 2023-01-28T01:35:30.805276
 ---
-## Retrospect
 Would you prefer if people only talked about the necessary bits, leaving any
 emotion out of it? Regardless of your answer, it is most effective communication
 method I know. Things could be very straightforward and clear, removing any

@@ -3,7 +3,6 @@ title: Learning and Loving React
 description: My journey with ReactJS so far.
 date: 2025-02-14T14:36:41.601Z
 ---
-## Learning and Loving React
 Interestingly enough, React was my first attempt at frontend web development,
 back in 2019. It didn't take me much to understand the basics then, but it
 didn't excite me either. I was in college at the time, having fun with writing

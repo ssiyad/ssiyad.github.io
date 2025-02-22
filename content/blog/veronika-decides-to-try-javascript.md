@@ -3,7 +3,6 @@ title: Veronika Decides To Try JavaScript
 description: A retrospective on JavaScript and its uncanny methods to see how it delivers a developer friendly environment.
 date: 2022-08-23T20:52:29+05:30
 ---
-## Veronika Decides To Try JavaScript 
 That’s a joke, she didn’t. Instead, she decides to die only to meet a new world of infinite
 possibilities that awaited her. She is a character from Paulo Coelho’s stellar novel titled
 ‘Veronika Decides to Die’. If you haven’t read it already, I suggest you do. It’s a good
