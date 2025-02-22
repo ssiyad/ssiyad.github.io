@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    'nuxt-icon',
+    '@nuxt/icon',
   ],
   pages: true,
   content: {
