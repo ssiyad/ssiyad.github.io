@@ -10,19 +10,18 @@ export default defineNuxtConfig({
   ],
   pages: true,
   content: {
-    highlight: {
-      theme: 'catppuccin-mocha',
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'catppuccin-mocha',
+        },
+      },
     },
   },
   routeRules: {
-    '/meet': {
-      redirect: 'https://meet.google.com/cxg-nvum-xxf',
-    },
-    '/music': {
-      redirect: 'https://open.spotify.com/playlist/5ONWkSGfSjWjR0OAAotkKg',
-    },
     '/resume': {
       redirect: '/docs/resume.pdf',
     },
   },
+  compatibilityDate: '2025-02-22',
 });

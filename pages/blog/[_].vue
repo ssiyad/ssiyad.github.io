@@ -1,18 +1,26 @@
 <template>
-  <main>
-    <ContentDoc v-slot="{ doc }">
-      <article>
-        <div class="text-sm text-neutral-500 dark:invert">
-          {{ format(doc.date, 'do MMMM, uuuu') }}
-        </div>
-        <ContentRenderer class="prose-custom mx-4 sm:mx-auto" :value="doc" />
-      </article>
-    </ContentDoc>
+  <main class="prose-custom">
+    <article>
+      <div v-if="post?.date" class="text-sm text-neutral-500 dark:invert">
+        {{ format(post.date, 'do MMMM, uuuu') }}
+      </div>
+      <ContentRenderer
+        v-if="post"
+        class="prose-custom mx-4 sm:mx-auto"
+        :value="post"
+      />
+    </article>
   </main>
 </template>
 
 <script setup lang="ts">
 import { format } from 'date-fns';
+
+const route = useRoute();
+
+const { data: post } = await useAsyncData(route.path, () => {
+  return queryCollection('blog').path(route.path).first();
+});
 
 definePageMeta({
   layout: 'basic',
