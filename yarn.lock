@@ -22,10 +22,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@antfu/install-pkg@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@antfu/install-pkg@npm:1.0.0"
+  dependencies:
+    package-manager-detector: "npm:^0.2.8"
+    tinyexec: "npm:^0.3.2"
+  checksum: 10c0/2361383f9aef51f39e96d0276eb266f01d1cabd4881bba6db2e3dff392ac33b537fcb18a07c66ecd315b808b9a70dc48a95e53531d407b2e1956f49f3b6c5b5b
+  languageName: node
+  linkType: hard
+
 "@antfu/utils@npm:^0.7.10":
   version: 0.7.10
   resolution: "@antfu/utils@npm:0.7.10"
   checksum: 10c0/98991f66a4752ef097280b4235b27d961a13a2c67ef8e5b716a120eb9823958e20566516711204e2bfb08f0b935814b715f49ecd79c3b9b93ce32747ac297752
+  languageName: node
+  linkType: hard
+
+"@antfu/utils@npm:^8.1.0":
+  version: 8.1.1
+  resolution: "@antfu/utils@npm:8.1.1"
+  checksum: 10c0/cd55d322496f0324323a7bd312bbdc305db02f5c74c53d59213a00a7ecfd66926b6755a41f27c6e664a687cd7a967d3a8b12d3ea57f264ae45dd1c5c181f5160
   languageName: node
   linkType: hard
 
@@ -631,7 +648,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/collections@npm:^1.0.406":
+"@iconify/collections@npm:^1.0.425":
   version: 1.0.520
   resolution: "@iconify/collections@npm:1.0.520"
   dependencies:
@@ -647,7 +664,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/vue@npm:^4.1.1":
+"@iconify/utils@npm:^2.1.23":
+  version: 2.3.0
+  resolution: "@iconify/utils@npm:2.3.0"
+  dependencies:
+    "@antfu/install-pkg": "npm:^1.0.0"
+    "@antfu/utils": "npm:^8.1.0"
+    "@iconify/types": "npm:^2.0.0"
+    debug: "npm:^4.4.0"
+    globals: "npm:^15.14.0"
+    kolorist: "npm:^1.8.0"
+    local-pkg: "npm:^1.0.0"
+    mlly: "npm:^1.7.4"
+  checksum: 10c0/926013852cd9d09b8501ee0f3f7d40386dc5ed1cb904869d6502f5ee1a64aee5664e9c00da49d700528d26c4a51ea0cac4f046c4eb281d0f8d54fc5df2f3fd0d
+  languageName: node
+  linkType: hard
+
+"@iconify/vue@npm:^4.1.2":
   version: 4.3.0
   resolution: "@iconify/vue@npm:4.3.0"
   dependencies:
@@ -939,7 +972,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:1.7.0, @nuxt/devtools-kit@npm:^1.1.1":
+"@nuxt/devtools-kit@npm:1.7.0, @nuxt/devtools-kit@npm:^1.3.1":
   version: 1.7.0
   resolution: "@nuxt/devtools-kit@npm:1.7.0"
   dependencies:
@@ -1036,7 +1069,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.15.4, @nuxt/kit@npm:^3.11.1, @nuxt/kit@npm:^3.12.1, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.14.1592, @nuxt/kit@npm:^3.15.0, @nuxt/kit@npm:^3.15.1, @nuxt/kit@npm:^3.15.4":
+"@nuxt/kit@npm:3.15.4, @nuxt/kit@npm:^3.11.2, @nuxt/kit@npm:^3.13.2, @nuxt/kit@npm:^3.14.1592, @nuxt/kit@npm:^3.15.0, @nuxt/kit@npm:^3.15.1, @nuxt/kit@npm:^3.15.4":
   version: 3.15.4
   resolution: "@nuxt/kit@npm:3.15.4"
   dependencies:
@@ -1795,7 +1828,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:^0.5.10":
+"@tailwindcss/typography@npm:^0.5.16":
   version: 0.5.16
   resolution: "@tailwindcss/typography@npm:0.5.16"
   dependencies:
@@ -1825,6 +1858,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/eslint-plugin-tailwindcss@npm:^3":
+  version: 3.17.0
+  resolution: "@types/eslint-plugin-tailwindcss@npm:3.17.0"
+  dependencies:
+    "@types/eslint": "npm:*"
+  checksum: 10c0/256c720bab11019fe99fc1a60e8d57221e1d4312f43ae05f9526de61be51050d584f3735ba10765e0cfc70ed318acf25743130f5b4f426412550dd68bc095f37
+  languageName: node
+  linkType: hard
+
+"@types/eslint@npm:*":
+  version: 9.6.1
+  resolution: "@types/eslint@npm:9.6.1"
+  dependencies:
+    "@types/estree": "npm:*"
+    "@types/json-schema": "npm:*"
+  checksum: 10c0/69ba24fee600d1e4c5abe0df086c1a4d798abf13792d8cfab912d76817fe1a894359a1518557d21237fbaf6eda93c5ab9309143dee4c59ef54336d1b3570420e
+  languageName: node
+  linkType: hard
+
 "@types/estree@npm:*, @types/estree@npm:1.0.6, @types/estree@npm:^1.0.0":
   version: 1.0.6
   resolution: "@types/estree@npm:1.0.6"
@@ -1850,7 +1902,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:^7.0.12":
+"@types/json-schema@npm:*, @types/json-schema@npm:^7.0.12":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
   checksum: 10c0/a996a745e6c5d60292f36731dd41341339d4eeed8180bb09226e5c8d23759067692b1d88e5d91d72ee83dfc00d3aca8e7bd43ea120516c17922cbcb7c3e252db
@@ -2380,18 +2432,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:10.11.1, @vueuse/core@npm:^10.7.2":
-  version: 10.11.1
-  resolution: "@vueuse/core@npm:10.11.1"
-  dependencies:
-    "@types/web-bluetooth": "npm:^0.0.20"
-    "@vueuse/metadata": "npm:10.11.1"
-    "@vueuse/shared": "npm:10.11.1"
-    vue-demi: "npm:>=0.14.8"
-  checksum: 10c0/6a974c1510ce84e652e3d180a4f4373e37e59a5ec025a7a8cec7f144a4ccff25dbdd82e3143ffb057323f467a1076b39da30953981e822c4bd41a7841121afee
-  languageName: node
-  linkType: hard
-
 "@vueuse/core@npm:11.3.0, @vueuse/core@npm:^11.1.0":
   version: 11.3.0
   resolution: "@vueuse/core@npm:11.3.0"
@@ -2401,6 +2441,18 @@ __metadata:
     "@vueuse/shared": "npm:11.3.0"
     vue-demi: "npm:>=0.14.10"
   checksum: 10c0/57ebed3ee2fd5b33297bbb36727424dc1707357db52954a1715366dd6583a4d53a05b10d17d16d1e5bf91fe8f12ea69fd6b232551f60167098ebc606b7234d4a
+  languageName: node
+  linkType: hard
+
+"@vueuse/core@npm:12.7.0, @vueuse/core@npm:^12.7.0":
+  version: 12.7.0
+  resolution: "@vueuse/core@npm:12.7.0"
+  dependencies:
+    "@types/web-bluetooth": "npm:^0.0.20"
+    "@vueuse/metadata": "npm:12.7.0"
+    "@vueuse/shared": "npm:12.7.0"
+    vue: "npm:^3.5.13"
+  checksum: 10c0/d1ff4009097f15d4204b8b64f6ae4dda4f47e228c12588dcf8018f105eb804406344e35ef1f30b24e4e79b3cd19fd8c1289395f81f8a99a8f49daa7522cf7cbe
   languageName: node
   linkType: hard
 
@@ -2418,13 +2470,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:10.11.1":
-  version: 10.11.1
-  resolution: "@vueuse/metadata@npm:10.11.1"
-  checksum: 10c0/c252056aa7e7bd5d207791a2e3b415dcb81fef5b24bfe18cefdec026ae9b7e5a5813100d2e55262fc66feafe15ccdc11a69351d724d848fafe4b3b052e559283
-  languageName: node
-  linkType: hard
-
 "@vueuse/metadata@npm:11.3.0":
   version: 11.3.0
   resolution: "@vueuse/metadata@npm:11.3.0"
@@ -2432,18 +2477,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/nuxt@npm:^10.7.2":
-  version: 10.11.1
-  resolution: "@vueuse/nuxt@npm:10.11.1"
-  dependencies:
-    "@nuxt/kit": "npm:^3.12.1"
-    "@vueuse/core": "npm:10.11.1"
-    "@vueuse/metadata": "npm:10.11.1"
-    local-pkg: "npm:^0.5.0"
-    vue-demi: "npm:>=0.14.8"
-  peerDependencies:
-    nuxt: ^3.0.0
-  checksum: 10c0/f6d825ffefe88851cbf3da9d317343eccb88547c4e054005b7a3b0bf184963765766dea177256ec2ad27553293c9bc40b9af47d2c4a581d1eb916d54b3d75df6
+"@vueuse/metadata@npm:12.7.0":
+  version: 12.7.0
+  resolution: "@vueuse/metadata@npm:12.7.0"
+  checksum: 10c0/e85fd0cf4fc432ba8eb21381d31f08dccb5bb42ed8bc3d21aa755f5e4ec4400c8d3168048b9cfc229544ee417bbd66123d053f248cc64ac0b7889de54e1ac571
   languageName: node
   linkType: hard
 
@@ -2462,12 +2499,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:10.11.1":
-  version: 10.11.1
-  resolution: "@vueuse/shared@npm:10.11.1"
+"@vueuse/nuxt@npm:^12.7.0":
+  version: 12.7.0
+  resolution: "@vueuse/nuxt@npm:12.7.0"
   dependencies:
-    vue-demi: "npm:>=0.14.8"
-  checksum: 10c0/22c4f04be8fdb5e95535cf20f13956fc1f3707540f3730282905e6f9b24f314ada28292e82f4401d88b2c1fcf7fc7203011260958f517abc2b756779243147e3
+    "@nuxt/kit": "npm:^3.15.4"
+    "@vueuse/core": "npm:12.7.0"
+    "@vueuse/metadata": "npm:12.7.0"
+    local-pkg: "npm:^1.0.0"
+    vue: "npm:^3.5.13"
+  peerDependencies:
+    nuxt: ^3.0.0
+  checksum: 10c0/f92719805858888b98cb04fb9a7a9e3def008106508b7f7e2d9b956a52ce1534203133314b24943577b1b212dbfc6b97599781ac1b5a40d059d5db4c21e89432
   languageName: node
   linkType: hard
 
@@ -2477,6 +2520,15 @@ __metadata:
   dependencies:
     vue-demi: "npm:>=0.14.10"
   checksum: 10c0/820af5359d204e434b27ef570e5dfb5fe765e19d540738665c51c8d1569b81dd000dbe292add15dffb1b9538cbcec890626d0b47a5525e624273a0963b524e1f
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:12.7.0":
+  version: 12.7.0
+  resolution: "@vueuse/shared@npm:12.7.0"
+  dependencies:
+    vue: "npm:^3.5.13"
+  checksum: 10c0/b9508af450146feb5f1e9c53f0854e9a7b4e819ebd56a8cdeaf717287c4ade72bbfa4d4c90d656c27141288986dd712156b4d0463582616be8bd42f9368e7243
   languageName: node
   linkType: hard
 
@@ -3582,13 +3634,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dayjs@npm:^1.11.10":
-  version: 1.11.13
-  resolution: "dayjs@npm:1.11.13"
-  checksum: 10c0/a3caf6ac8363c7dade9d1ee797848ddcf25c1ace68d9fe8678ecf8ba0675825430de5d793672ec87b24a69bf04a1544b176547b2539982275d5542a7955f35b7
-  languageName: node
-  linkType: hard
-
 "db0@npm:^0.2.1":
   version: 0.2.4
   resolution: "db0@npm:0.2.4"
@@ -4265,7 +4310,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-tailwindcss@npm:^3.14.0":
+"eslint-plugin-tailwindcss@npm:^3.18.0":
   version: 3.18.0
   resolution: "eslint-plugin-tailwindcss@npm:3.18.0"
   dependencies:
@@ -4940,6 +4985,13 @@ __metadata:
   dependencies:
     type-fest: "npm:^0.20.2"
   checksum: 10c0/d3c11aeea898eb83d5ec7a99508600fbe8f83d2cf00cbb77f873dbf2bcb39428eff1b538e4915c993d8a3b3473fa71eeebfe22c9bb3a3003d1e26b1f2c8a42cd
+  languageName: node
+  linkType: hard
+
+"globals@npm:^15.14.0":
+  version: 15.15.0
+  resolution: "globals@npm:15.15.0"
+  checksum: 10c0/f9ae80996392ca71316495a39bec88ac43ae3525a438b5626cd9d5ce9d5500d0a98a266409605f8cd7241c7acf57c354a48111ea02a767ba4f374b806d6861fe
   languageName: node
   linkType: hard
 
@@ -7393,45 +7445,53 @@ __metadata:
     "@nuxt/eslint-config": "npm:^0.2.0"
     "@nuxtjs/tailwindcss": "npm:^6.13.1"
     "@prettier/sync": "npm:^0.3.0"
-    "@tailwindcss/typography": "npm:^0.5.10"
+    "@tailwindcss/typography": "npm:^0.5.16"
+    "@types/eslint-plugin-tailwindcss": "npm:^3"
     "@typescript-eslint/eslint-plugin": "npm:^6.19.0"
     "@typescript-eslint/parser": "npm:^6.19.0"
-    "@vueuse/core": "npm:^10.7.2"
-    "@vueuse/nuxt": "npm:^10.7.2"
+    "@vueuse/core": "npm:^12.7.0"
+    "@vueuse/nuxt": "npm:^12.7.0"
     date-fns: "npm:^4.1.0"
-    dayjs: "npm:^1.11.10"
     eslint: "npm:^8.56.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-prettier: "npm:^5.1.3"
-    eslint-plugin-tailwindcss: "npm:^3.14.0"
+    eslint-plugin-tailwindcss: "npm:^3.18.0"
     eslint-plugin-vue: "npm:^9.20.1"
     husky: "npm:^8.0.0"
     lint-staged: "npm:^15.2.0"
-    nuxt: "npm:^3.9.3"
-    nuxt-icon: "npm:^0.6.8"
+    nuxt: "npm:^3.15.4"
+    nuxt-icon: "npm:^1.0.0-beta.7"
     prettier: "npm:^3.2.5"
     prettier-plugin-classnames: "npm:^0.3.2"
     prettier-plugin-merge: "npm:^0.6.0"
     prettier-plugin-tailwindcss: "npm:^0.5.14"
-    vue: "npm:^3.4.14"
+    tailwindcss: "npm:3.x"
+    typescript: "npm:^5.7.3"
+    vue: "npm:^3.5.13"
     vue-eslint-parser: "npm:^9.4.0"
-    vue-router: "npm:^4.2.5"
+    vue-router: "npm:^4.5.0"
   languageName: unknown
   linkType: soft
 
-"nuxt-icon@npm:^0.6.8":
-  version: 0.6.10
-  resolution: "nuxt-icon@npm:0.6.10"
+"nuxt-icon@npm:^1.0.0-beta.7":
+  version: 1.0.0-beta.7
+  resolution: "nuxt-icon@npm:1.0.0-beta.7"
   dependencies:
-    "@iconify/collections": "npm:^1.0.406"
-    "@iconify/vue": "npm:^4.1.1"
-    "@nuxt/devtools-kit": "npm:^1.1.1"
-    "@nuxt/kit": "npm:^3.11.1"
-  checksum: 10c0/948be6855be13f687c027943668af8d0aa804803d5add768a5dbbd3296fa49eba0185a2e0049c24fd0a8903632e25703de8d7f78c8326678bc21a059edada7b0
+    "@iconify/collections": "npm:^1.0.425"
+    "@iconify/types": "npm:^2.0.0"
+    "@iconify/utils": "npm:^2.1.23"
+    "@iconify/vue": "npm:^4.1.2"
+    "@nuxt/devtools-kit": "npm:^1.3.1"
+    "@nuxt/kit": "npm:^3.11.2"
+    consola: "npm:^3.2.3"
+    fast-glob: "npm:^3.3.2"
+    local-pkg: "npm:^0.5.0"
+    pathe: "npm:^1.1.2"
+  checksum: 10c0/42f268744b515c5cee03ca537f5f11a27c5b468c4c61863aaf652bc0ddbc57079ce37861fcb4104bb06dac9a763138a23f5bf71d082c65eb92e565553b2f0995
   languageName: node
   linkType: hard
 
-"nuxt@npm:^3.9.3":
+"nuxt@npm:^3.15.4":
   version: 3.15.4
   resolution: "nuxt@npm:3.15.4"
   dependencies:
@@ -7736,7 +7796,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-manager-detector@npm:^0.2.9":
+"package-manager-detector@npm:^0.2.8, package-manager-detector@npm:^0.2.9":
   version: 0.2.9
   resolution: "package-manager-detector@npm:0.2.9"
   checksum: 10c0/5fe1e80743fd110954f1904be4be32f34fc46c17b05e9e47a81e2f5777e474366cb570ed3b697a5ae8290860b53ac4b309898b24919dc1ddeb6d4097429113e1
@@ -9779,7 +9839,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:~3.4.17":
+"tailwindcss@npm:3.x, tailwindcss@npm:~3.4.17":
   version: 3.4.17
   resolution: "tailwindcss@npm:3.4.17"
   dependencies:
@@ -10054,7 +10114,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.2.2":
+"typescript@npm:^5.2.2, typescript@npm:^5.7.3":
   version: 5.7.3
   resolution: "typescript@npm:5.7.3"
   bin:
@@ -10064,7 +10124,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.2.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.7.3#optional!builtin<compat/typescript>":
   version: 5.7.3
   resolution: "typescript@patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"
   bin:
@@ -10804,7 +10864,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-demi@npm:>=0.14.10, vue-demi@npm:>=0.14.8":
+"vue-demi@npm:>=0.14.10":
   version: 0.14.10
   resolution: "vue-demi@npm:0.14.10"
   peerDependencies:
@@ -10844,7 +10904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-router@npm:^4.2.5, vue-router@npm:^4.5.0":
+"vue-router@npm:^4.5.0":
   version: 4.5.0
   resolution: "vue-router@npm:4.5.0"
   dependencies:
@@ -10855,7 +10915,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.4.14, vue@npm:^3.5.13":
+"vue@npm:^3.5.13":
   version: 3.5.13
   resolution: "vue@npm:3.5.13"
   dependencies:
