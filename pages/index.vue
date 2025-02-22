@@ -1,6 +1,5 @@
 <template>
   <div class="prose-custom">
-    <Logo />
     <p>
       Hello, I’m <span class="highlight">Sabu Siyad</span>. I write useful,
       reusable and maintainable code!

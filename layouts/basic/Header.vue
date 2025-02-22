@@ -1,13 +1,8 @@
 <template>
-  <div class="mx-auto border-b pb-4">
-    <div
-      v-if="$route.path !== '/'"
-      class="mx-auto mb-4 w-max lg:fixed lg:left-6 lg:top-6"
-    >
-      <a href="/">
-        <Logo />
-      </a>
-    </div>
+  <header class="flex items-center justify-between p-4">
+    <a href="/">
+      <Logo class="size-8" />
+    </a>
     <div class="flex flex-wrap items-center gap-1">
       <div
         v-for="(link, idx) in links"
@@ -28,7 +23,7 @@
         />
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">
