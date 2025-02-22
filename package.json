@@ -40,5 +40,6 @@
     "date-fns": "^4.1.0",
     "dayjs": "^1.11.10",
     "eslint-plugin-tailwindcss": "^3.14.0"
-  }
+  },
+  "packageManager": "yarn@4.6.0"
 }
