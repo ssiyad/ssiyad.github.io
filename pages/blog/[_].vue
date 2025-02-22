@@ -22,6 +22,15 @@ const { data: post } = await useAsyncData(route.path, () => {
   return queryCollection('blog').path(route.path).first();
 });
 
+useHead({
+  title: post?.value?.title,
+});
+
+useSeoMeta({
+  title: post?.value?.title,
+  description: post?.value?.description,
+});
+
 definePageMeta({
   layout: 'basic',
 });
