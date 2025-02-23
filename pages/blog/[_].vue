@@ -9,11 +9,7 @@
       <div v-if="post?.date" class="text-sm text-neutral-500 dark:invert">
         {{ format(post.date, 'do MMMM, uuuu') }}
       </div>
-      <ContentRenderer
-        v-if="post"
-        class="prose-custom mx-4 sm:mx-auto"
-        :value="post"
-      />
+      <ContentRenderer v-if="post" class="mx-4 sm:mx-auto" :value="post" />
     </article>
   </main>
 </template>
