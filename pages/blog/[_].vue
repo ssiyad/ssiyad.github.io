@@ -1,6 +1,6 @@
 <template>
   <main>
-    <article class="prose-custom">
+    <article class="prose-custom mx-auto max-w-prose p-4">
       <h1>
         <a :href="route.path">
           {{ post?.title }}

@@ -4,6 +4,10 @@ export default [
     url: '/blog',
   },
   {
+    name: 'Projects',
+    url: '/repos',
+  },
+  {
     name: 'GitHub',
     url: 'https://github.com/ssiyad',
     external: true,

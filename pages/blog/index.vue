@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="prose-custom mx-4 sm:mx-auto">
+    <div class="prose-custom mx-auto max-w-prose p-4">
       <h1>
         <a :href="route.path"> Blog </a>
       </h1>

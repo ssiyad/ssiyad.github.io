@@ -1,5 +1,5 @@
 <template>
-  <div class="prose-custom">
+  <div class="prose-custom mx-auto max-w-prose p-4">
     <p>
       Hello, I’m <span class="highlight">Sabu Siyad</span>. I write useful,
       reusable and maintainable code!
