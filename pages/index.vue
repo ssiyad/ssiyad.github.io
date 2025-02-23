@@ -55,6 +55,8 @@ definePageMeta({
 </script>
 
 <style scoped>
+@reference '../assets/css/main.css'
+
 .highlight {
   @apply font-medium text-neutral-900 dark:invert;
 }
