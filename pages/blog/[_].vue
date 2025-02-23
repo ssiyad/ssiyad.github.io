@@ -2,6 +2,11 @@
   <Layout :breadcrumbs="breadcrumbs">
     <main class="prose-custom">
       <article>
+        <h1>
+          <a :href="route.path">
+            {{ post?.title }}
+          </a>
+        </h1>
         <div v-if="post?.date" class="text-sm text-neutral-500 dark:invert">
           {{ format(post.date, 'do MMMM, uuuu') }}
         </div>
