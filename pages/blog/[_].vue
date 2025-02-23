@@ -1,6 +1,6 @@
 <template>
-  <main class="prose-custom">
-    <article>
+  <main>
+    <article class="prose-custom">
       <h1>
         <a :href="route.path">
           {{ post?.title }}
