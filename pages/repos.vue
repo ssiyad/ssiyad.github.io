@@ -34,6 +34,16 @@
         </div>
       </div>
     </div>
+    <div class="mt-4 text-sm text-neutral-700 dark:text-neutral-300">
+      Data of repositories is fetched from GitHub. You can find the source code
+      of this page
+      <a
+        :href="sourceCodeUrl"
+        target="_blank"
+        class="text-brand-700 dark:text-brand-300"
+        >here</a
+      >.
+    </div>
   </div>
 </template>
 
@@ -47,10 +57,13 @@ definePageMeta({
 });
 
 const route = useRoute();
+const sourceCodeUrl = 'https://github.com/ssiyad/ssiyad.github.io';
+const searchUrl =
+  'https://api.github.com/search/repositories?q=user:ssiyad+fork:false&sort=stars';
 
 const { data: projects } = await useAsyncData(route.path, async () => {
-  return fetch(
-    'https://api.github.com/search/repositories?q=user:ssiyad+fork:false&sort=stars',
-  ).then((response) => response.json().then((data) => data.items));
+  return fetch(searchUrl).then((response) =>
+    response.json().then((data) => data.items),
+  );
 });
 </script>
