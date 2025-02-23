@@ -2,6 +2,9 @@
   <Layout :breadcrumbs="breadcrumbs">
     <main>
       <div class="prose-custom mx-4 sm:mx-auto">
+        <h1>
+          <a :href="route.path"> Blog </a>
+        </h1>
         <div v-for="post in posts" :key="post.id">
           <h2>
             <a :href="post.path">
