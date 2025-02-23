@@ -7,6 +7,16 @@
   --font-mono: GeistMono, monospace;
   --font-sans: Geist, sans-serif;
   --font-serif: Domine, serif;
+
+  --color-brand-100: #d8f3dc;
+  --color-brand-200: #b7e4c7;
+  --color-brand-300: #95d5b2;
+  --color-brand-400: #74c69d;
+  --color-brand-500: #52b788;
+  --color-brand-600: #40916c;
+  --color-brand-700: #2d6a4f;
+  --color-brand-800: #1b4332;
+  --color-brand-900: #081c15;
 }
 
 /*
@@ -29,21 +39,21 @@
 
 @utility prose-custom {
   @apply leading-loose
-		prose
-		dark:prose-invert
-		prose-h2:font-medium prose-h2:before:content-['#'] prose-h2:before:mr-2 prose-h2:relative prose-h2:-left-4
-		prose-h3:font-medium prose-h3:before:content-['##'] prose-h3:before:mr-2 prose-h3:relative prose-h3:-left-6
-		prose-h4:font-medium prose-h4:before:content-['###'] prose-h4:before:mr-2 prose-h4:relative prose-h4:-left-8
-		prose-h5:font-medium prose-h5:before:content-['####'] prose-h5:before:mr-2 prose-h5:relative prose-h5:-left-10
-		prose-headings:prose-a:border-b-2
-		prose-headings:prose-a:border-neutral-600
-		dark:prose-headings:prose-a:border-neutral-200
-		prose-a:no-underline
-		prose-headings:prose-a:pb-2
-		prose-a:border-b-2
-		prose-a:pb-1
-		prose-a:border-neutral-200
-		dark:prose-a:border-neutral-600
-		prose-headings:text-base
-		underline-offset-8;
+    prose
+    dark:prose-invert
+    prose-h2:font-medium prose-h2:before:content-['#'] prose-h2:before:mr-2 prose-h2:relative prose-h2:-left-4
+    prose-h3:font-medium prose-h3:before:content-['##'] prose-h3:before:mr-2 prose-h3:relative prose-h3:-left-6
+    prose-h4:font-medium prose-h4:before:content-['###'] prose-h4:before:mr-2 prose-h4:relative prose-h4:-left-8
+    prose-h5:font-medium prose-h5:before:content-['####'] prose-h5:before:mr-2 prose-h5:relative prose-h5:-left-10
+    prose-headings:prose-a:border-b-2
+    prose-headings:prose-a:border-brand-600
+    dark:prose-headings:prose-a:border-brand-200
+    prose-a:no-underline
+    prose-headings:prose-a:pb-2
+    prose-a:border-b-2
+    prose-a:pb-1
+    prose-a:border-brand-200
+    dark:prose-a:border-brand-600
+    prose-headings:text-base
+    underline-offset-8;
 }
