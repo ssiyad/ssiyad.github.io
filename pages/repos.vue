@@ -49,7 +49,13 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Sabu Siyad',
+  title: 'Repositories',
+});
+
+useSeoMeta({
+  title: 'Repositories',
+  description: 'List of repositories by Sabu Siyad',
+  ogTitle: 'Repositories',
 });
 
 definePageMeta({
