@@ -47,13 +47,13 @@
     prose-h5:font-medium prose-h5:before:content-['####'] prose-h5:before:mr-2 prose-h5:relative prose-h5:-left-10
     prose-headings:prose-a:border-b-2
     prose-headings:prose-a:border-brand-600
-    dark:prose-headings:prose-a:border-brand-200
+    dark:prose-headings:prose-a:border-brand-600
     prose-a:no-underline
     prose-headings:prose-a:pb-2
     prose-a:border-b-2
     prose-a:pb-1
     prose-a:border-brand-200
-    dark:prose-a:border-brand-600
+    dark:prose-a:border-brand-200
     prose-headings:text-base
     underline-offset-8;
 }
