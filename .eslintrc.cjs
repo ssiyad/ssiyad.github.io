@@ -8,7 +8,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-essential',
     '@nuxt/eslint-config',
-    'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended',
   ],
   overrides: [
@@ -35,7 +34,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'eslint-plugin-tailwindcss', 'vue'],
+  plugins: ['@typescript-eslint', 'vue'],
   rules: {
     'vue/multi-word-component-names': 'off',
   },
