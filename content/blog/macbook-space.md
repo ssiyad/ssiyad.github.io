@@ -19,7 +19,10 @@ came out. I tried to make it push it in but it just did not work.
 As a self proclaimed Google (re)searcher, I tried my best at finding resources
 on how to do this stuff. I found some Reddit posts, with some guidance but none
 of them really helped. But one of them had a link to this video which did help!
-You can check it out [here](https://www.youtube.com/watch?v=cXfOYCrDLvk).
+
+:::youtube
+<YouTube video-id='cXfOYCrDLvk' :start-at='669' />
+:::
 
 The process is not that hard. It just takes some practice. All it took is a
 little push at the right point. My space bar is back to it's former glory now.
