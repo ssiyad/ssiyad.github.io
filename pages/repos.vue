@@ -1,6 +1,8 @@
 <template>
   <div class="p-4">
-    <h1 class="prose-custom mb-4">
+    <h1
+      class="border-brand-600 mb-4 w-max border-b-2 pb-2 font-medium dark:text-white"
+    >
       <a :href="route.path"> Repositories </a>
     </h1>
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -67,9 +69,12 @@ const sourceCodeUrl = 'https://github.com/ssiyad/ssiyad.github.io';
 const searchUrl =
   'https://api.github.com/search/repositories?q=user:ssiyad+fork:false&sort=stars';
 
-const { data: projects } = await useAsyncData(route.path, async () => {
-  return fetch(searchUrl).then((response) =>
-    response.json().then((data) => data.items),
-  );
-});
+const { data: projects } = await useAsyncData(
+  route.path,
+  () => fetch(searchUrl).then((response) => response.json()),
+  {
+    lazy: true,
+    transform: (data) => data.items,
+  },
+);
 </script>
