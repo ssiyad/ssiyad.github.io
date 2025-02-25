@@ -71,9 +71,8 @@ const searchUrl =
 
 const { data: projects } = await useAsyncData(
   route.path,
-  () => fetch(searchUrl).then((response) => response.json()),
+  () => useLazyFetch(searchUrl),
   {
-    lazy: true,
     transform: (data) => data.items,
   },
 );
