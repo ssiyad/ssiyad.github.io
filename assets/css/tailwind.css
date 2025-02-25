@@ -35,6 +35,16 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  ::selection {
+    background-color: var(--color-brand-100);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    ::selection {
+      background-color: var(--color-brand-800);
+    }
+  }
 }
 
 @utility prose-custom {
