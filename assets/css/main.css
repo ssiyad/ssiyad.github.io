@@ -15,8 +15,6 @@
   src: url('/fonts/Geist.woff2') format('woff2');
 }
 
-@media(prefers-color-scheme: dark) {
-  body {
-    background-color: #121212;
-  }
+body {
+  @apply bg-zinc-50 dark:bg-zinc-950
 }
