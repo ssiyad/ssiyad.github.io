@@ -69,11 +69,7 @@ const sourceCodeUrl = 'https://github.com/ssiyad/ssiyad.github.io';
 const searchUrl =
   'https://api.github.com/search/repositories?q=user:ssiyad+fork:false&sort=stars';
 
-const { data: projects } = await useAsyncData(
-  route.path,
-  () => useLazyFetch(searchUrl),
-  {
-    transform: (data) => data.items,
-  },
-);
+const { data: projects } = useLazyFetch(searchUrl, {
+  transform: (data) => data.items,
+});
 </script>
