@@ -7,7 +7,7 @@
       <div
         v-for="project in projects"
         :key="project.id"
-        class="border-brand-100 group rounded-md border p-4 dark:text-white"
+        class="border-brand-100 group rounded-md border p-4"
       >
         <div class="mb-1 flex items-center justify-between">
           <div class="font-medium">
