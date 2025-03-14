@@ -58,6 +58,6 @@ definePageMeta({
 @reference '../assets/css/main.css'
 
 .highlight {
-  @apply font-medium text-neutral-900 dark:invert;
+  @apply font-medium text-neutral-900;
 }
 </style>

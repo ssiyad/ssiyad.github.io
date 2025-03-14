@@ -1,16 +1,13 @@
 <template>
   <div class="p-4">
-    <h1
-      class="border-brand-600 mb-4 w-max border-b-2 pb-2 font-medium dark:text-white"
-    >
+    <h1 class="border-brand-600 mb-4 w-max border-b-2 pb-2 font-medium">
       <a :href="route.path"> Repositories </a>
     </h1>
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
       <div
         v-for="project in projects"
         :key="project.id"
-        class="border-brand-100 group dark:border-brand-900 rounded-md border p-4
-          dark:text-white"
+        class="border-brand-100 group rounded-md border p-4 dark:text-white"
       >
         <div class="mb-1 flex items-center justify-between">
           <div class="font-medium">
@@ -25,9 +22,7 @@
           </a>
         </div>
         <div class="mb-1 text-sm">{{ project.description }}</div>
-        <div
-          class="mb-1 flex flex-wrap items-center text-sm text-neutral-700 dark:text-neutral-300"
-        >
+        <div class="mb-1 flex flex-wrap items-center text-sm text-neutral-700">
           {{ project.language }}
           <template v-for="topic in project.topics" :key="topic">
             <Icon name="lucide:dot" />
@@ -36,15 +31,10 @@
         </div>
       </div>
     </div>
-    <div class="mt-4 text-sm text-neutral-700 dark:text-neutral-300">
+    <div class="mt-4 text-sm text-neutral-700">
       Data of repositories is fetched from GitHub. You can find the source code
       of this page
-      <a
-        :href="sourceCodeUrl"
-        target="_blank"
-        class="text-brand-700 dark:text-brand-300"
-        >here</a
-      >.
+      <a :href="sourceCodeUrl" target="_blank" class="text-brand-700">here</a>.
     </div>
   </div>
 </template>

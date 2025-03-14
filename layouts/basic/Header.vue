@@ -5,22 +5,18 @@
     </a>
     <div class="flex flex-wrap items-center gap-1">
       <div
-        v-for="(link, idx) in links"
+        v-for="(link, index) in links"
         :key="link.url"
         class="flex items-center gap-1"
       >
         <a
-          class="text-sm text-neutral-700 underline-offset-4 hover:underline dark:invert"
+          class="text-sm text-neutral-700 underline-offset-4 hover:underline"
           :href="link.url"
           :target="link.external ? '_blank' : '_self'"
         >
           {{ link.name }}
         </a>
-        <Icon
-          v-if="idx + 1 < links.length"
-          name="lucide:dot"
-          class="dark:invert"
-        />
+        <Icon v-if="index + 1 < links.length" name="lucide:dot" />
       </div>
     </div>
   </header>
