@@ -14,8 +14,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        display: ["Geist", ...defaultTheme.fontFamily.sans],
+        sans: ["Geist", ...defaultTheme.fontFamily.sans],
       },
     },
   },
