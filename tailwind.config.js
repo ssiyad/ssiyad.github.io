@@ -1,8 +1,28 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./templates/**/*.html", "./content/**/*.{html,md}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          primary: "#353A84",
+          secondary: "#FF6262",
+          tertiary: "#FF7373",
+          light: "#FFFFFF",
+        },
+      },
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        "inter-black": [
+          "Inter Black",
+          "Inter",
+          ...defaultTheme.fontFamily.sans,
+        ],
+        display: ["Geist", ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("@designbycode/tailwindcss-text-stroke")],
 };

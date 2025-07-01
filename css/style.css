@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Inter Black';
+	font-style: normal;
+	font-weight: 900;
+	src: url('/fonts/InterBlack.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Geist';
+	src: url('/fonts/Geist.woff2') format('woff2');
+}
+
+@layer base {
+	body {
+		@apply text-brand-light h-screen w-screen antialiased;
+	}
+}
+
+body {
+	background: linear-gradient(90deg, #1F2551 0%, #120B4F 100%);
+}
