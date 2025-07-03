@@ -42,3 +42,7 @@ body {
 .prose a:not(:is(h1, h2, h3, h4, h5) a) {
 	@apply no-underline border-b-2 pb-1 border-brand-tertiary
 }
+
+.prose img {
+	@apply rounded-lg;
+}
