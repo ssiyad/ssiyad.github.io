@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "partials/header.html" %}
+<main>
+	<article class="prose-custom mx-auto max-w-prose p-4">
+		<h1>
+			<a href="{{ page.permalink }}">
+				{{ page.title }}
+			</a>
+		</h1>
+		{% if page.date %}
+		<div class="text-sm text-neutral-500">
+			{{ page.date | date(format="%d %B, %Y") }}
+		</div>
+		{% endif %}
+		<div class="mx-4 sm:mx-auto" />
+			{{ page.content | safe }}
+		</div>
+	</article>
+</main>
+{% endblock content %}

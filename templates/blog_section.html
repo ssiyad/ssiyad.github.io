@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "partials/header.html" %}
+<main>
+	<div class="prose-custom mx-auto max-w-prose p-4">
+		<h1>
+			<a href="{{ section.path }}"> Blog </a>
+		</h1>
+		{% for page in section.pages %}
+		<div>
+			<h2>
+				<a href="{{ page.path }}">
+					{{ page.title }}
+				</a>
+			</h2>
+			<div class="line-clamp-3">{{ page.description }}</div>
+			<div class="text-sm text-neutral-500">
+				{{ page.date | date(format="%d %B, %Y") }}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</main>
+{% endblock content %}
