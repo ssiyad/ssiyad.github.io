@@ -20,9 +20,7 @@ As a self proclaimed Google (re)searcher, I tried my best at finding resources
 on how to do this stuff. I found some Reddit posts, with some guidance but none
 of them really helped. But one of them had a link to this video which did help!
 
-:::youtube
-<YouTube video-id='cXfOYCrDLvk' :start-at='669' />
-:::
+{{ youtube(video_id="cXfOYCrDLvk", start_at=669) }}
 
 The process is not that hard. It just takes some practice. All it took is a
 little push at the right point. My space bar is back to it's former glory now.
