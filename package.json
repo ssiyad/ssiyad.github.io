@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./css/style.css -o ./public/style.css",
+    "build": "npx tailwindcss -i ./css/style.css -o ./public/style.css --minify",
     "dev": "npx tailwindcss -i ./css/style.css -o ./public/style.css --watch"
   },
   "devDependencies": {
