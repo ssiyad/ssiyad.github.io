@@ -12,7 +12,7 @@ body {
 }
 
 .prose {
-	@apply leading-loose;
+	@apply leading-loose prose-zinc;
 }
 
 .prose :is(h1, h2, h3, h4, h5) {
