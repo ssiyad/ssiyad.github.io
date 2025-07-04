@@ -15,8 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./css/style.css -o ./public/style.css --minify",
-    "dev": "npx tailwindcss -i ./css/style.css -o ./public/style.css --watch"
+    "build": "npx tailwindcss -i ./css/style.css -o ./static/style.css --minify",
+    "dev": "npx tailwindcss -i ./css/style.css -o ./static/style.css --watch"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
