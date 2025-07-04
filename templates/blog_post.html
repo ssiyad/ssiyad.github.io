@@ -3,16 +3,14 @@
 {% block content %}
 {% include "partials/header.html" %}
 <main>
-	<article class="prose mx-auto max-w-prose p-4">
+	<article class="prose mx-4 sm:mx-auto max-w-prose p-4">
 		<h2>{{ page.title }}</h2>
 		{% if page.date %}
 		<div class="text-sm text-neutral-500">
 			{{ page.date | date(format="%d %B, %Y") }}
 		</div>
 		{% endif %}
-		<div class="mx-4 sm:mx-auto" />
-			{{ page.content | safe }}
-		</div>
+		{{ page.content | safe }}
 	</article>
 </main>
 {% endblock content %}
