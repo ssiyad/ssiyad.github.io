@@ -12,27 +12,27 @@ body {
 }
 
 .prose {
-	@apply leading-loose prose-zinc;
+	@apply prose-zinc leading-loose;
 }
 
 .prose :is(h1, h2, h3, h4, h5) {
-	@apply text-base border-b-2 border-brand-primary pb-1 w-max font-medium;
+	@apply border-b-2 border-brand-primary font-medium pb-1 text-base w-max;
 }
 
 .prose h2 {
-	@apply before:content-['#'] before:mr-2 relative -left-4;
+	@apply -left-4 before:mr-2 before:content-['#'] relative;
 }
 
 .prose h3 {
-	@apply before:content-['##'] before:mr-2 relative -left-6;
+	@apply -left-6 before:mr-2 before:content-['##'] relative;
 }
 
 .prose h4 {
-	@apply before:content-['###'] before:mr-2 relative -left-8;
+	@apply -left-8 before:mr-2 before:content-['###'] relative;
 }
 
 .prose h5 {
-	@apply before:content-['####'] before:mr-2 relative -left-10;
+	@apply -left-10 before:mr-2 before:content-['####'] relative;
 }
 
 .prose :is(h1, h2, h3, h4, h5) a {
@@ -40,7 +40,7 @@ body {
 }
 
 .prose a:not(:is(h1, h2, h3, h4, h5) a) {
-	@apply no-underline border-b-2 pb-1 border-brand-tertiary
+	@apply border-b-2 border-brand-tertiary no-underline pb-1;
 }
 
 .prose img {
