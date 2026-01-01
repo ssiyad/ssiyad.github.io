@@ -3,12 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./main.css" rel="stylesheet" />
+    <link href="/main.css" rel="stylesheet" />
     <title>ssiyad.com</title>
   </head>
   <body>
-    <div class="container mx-auto xl:max-w-xl py-16">
-      {% block content %}{% endblock %}
+    <div class="container mx-auto xl:max-w-xl py-32">
+      <div class="space-y-8">
+        <div class="flex items-center gap-4">
+          <div>
+            <img
+              src="{{ config.extra.avatar_url }}"
+              class="size-16 rounded-2xl shadow-sm"
+            />
+          </div>
+          <div>
+            <div class="font-medium">Hello, I am {{ config.extra.name }}</div>
+            <div class="text-sm">
+              {{ config.extra.designation }} at {{ config.extra.company }}
+            </div>
+          </div>
+        </div>
+        {% block content %}{% endblock %}
+      </div>
     </div>
   </body>
 </html>
