@@ -15,6 +15,6 @@
         <div class="text-sm">Security Engineer at Frappe</div>
       </div>
     </div>
-    <div>{{ section.content }}</div>
+    <div class="prose prose-neutral">{{ section.content | safe }}</div>
   </div>
 {% endblock %}
