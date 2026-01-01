@@ -13,4 +13,16 @@ build_search_index = true
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+name = "Sabu Siyad"
+designation = "Security Engineer"
+company = "Frappe"
+tech = ["JS/TS", "Python", "Go", "Rust"]
+
+[[extra.navigation]]
+name = "Home"
+url = "/"
+
+[[extra.navigation]]
+name = "Blog"
+url = "/blog"
+
