@@ -1,2 +1,11 @@
 @import "tailwindcss";
-@plugin "@tailwindcss/typography";
+
+@layer typography {
+	a {
+		@apply text-blue-600 hover:text-blue-800;
+	}
+
+	p {
+		@apply leading-relaxed mb-4;
+	}
+}
