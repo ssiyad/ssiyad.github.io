@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: var(--color-indigo-300);
+  --color-brand: var(--color-indigo-200);
 }
 
 @layer base {

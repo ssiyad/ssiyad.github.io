@@ -2,8 +2,8 @@
 
 {% block main %}
   <div>
-    <div class="text-xl font-semibold mb-1 text-white">{{ page.title }}</div>
-    <div class="mb-4 font-medium w-max border-b-2 border-brand">
+    <div class="text-xl font-semibold mb-1 text-brand">{{ page.title }}</div>
+    <div class="mb-4 font-medium w-max">
       Posted on {{ page.date | date(format="%B %d, %Y") }}
     </div>
     <div class="post mb-4">{{ page.content | safe }}</div>
