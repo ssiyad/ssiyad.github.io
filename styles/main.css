@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand: var(--color-indigo-300);
+}
+
 @layer base {
+  body {
+    @apply bg-black text-white/80;
+  }
   a {
-    @apply hover:text-indigo-800 cursor-pointer;
+    @apply hover:text-brand cursor-pointer text-white;
   }
   .post {
     @apply leading-relaxed;
@@ -10,10 +17,10 @@
       @apply font-medium underline underline-offset-4;
     }
     code:not(pre code) {
-      @apply px-1 bg-gray-200 rounded-md text-sm;
+      @apply px-1 bg-stone-800 shadow shadow-white/50 rounded-md text-sm;
     }
     pre {
-      @apply text-sm p-2 my-2 overflow-auto;
+      @apply text-sm p-2 my-2 overflow-auto bg-stone-900!;
     }
     h1,
     h2,
@@ -21,7 +28,7 @@
     h4,
     h5,
     h6 {
-      @apply font-semibold mt-4 mb-2 text-lg;
+      @apply font-semibold mt-4 mb-2 text-lg text-white;
     }
     strong {
       @apply font-medium;
