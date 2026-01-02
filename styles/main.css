@@ -1,6 +1,39 @@
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("/fonts/ZillaSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  size-adjust: 120%;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("/fonts/ZillaSlab-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  size-adjust: 120%;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("/fonts/ZillaSlab-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  size-adjust: 120%;
+}
+
+@font-face {
+  font-family: "Zilla Slab";
+  src: url("/fonts/ZillaSlab-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  size-adjust: 120%;
+}
+
 @import "tailwindcss";
 
 @theme {
+  --font-sans: "Zilla Slab", sans-serif;
   --color-brand: var(--color-indigo-200);
 }
 
@@ -12,7 +45,7 @@
     @apply hover:text-brand cursor-pointer text-white;
   }
   .post {
-    @apply leading-relaxed;
+    @apply leading-loose;
     a {
       @apply font-medium underline underline-offset-4;
     }
