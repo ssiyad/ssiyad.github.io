@@ -17,12 +17,12 @@
 {% endblock %}
 
 {% block main %}
-  <div class="space-y-4 mb-4">
+  <ul class="space-y-4 mb-4">
     <div class="w-max text-white text-xl font-semibold border-b-2 border-brand">
       Posts
     </div>
     {% for page in section.pages %}
-      <div>
+      <li>
         <a
           class="font-medium hover:underline underline-offset-4"
           href="{{ page.permalink }}"
@@ -30,7 +30,7 @@
           {{ page.title }}
         </a>
         <div class="text-sm">{{ page.date | date(format="%B %d, %Y") }}</div>
-      </div>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 {% endblock %}
