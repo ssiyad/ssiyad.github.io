@@ -1,44 +1,44 @@
 @import "tailwindcss";
 
-@layer typography {
-	a {
-		@apply text-blue-600 hover:text-blue-800;
-	}
-
-	p {
-		@apply leading-relaxed mb-4;
-	}
-	
-	strong {
-		@apply font-semibold;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		@apply font-semibold mt-6 mb-2;
-	}
-
-	pre {
-		@apply bg-gray-100 p-4 rounded wrap-break-word overflow-auto text-sm mb-4;
-	}
-
-	code:not(pre code) {
-		@apply bg-gray-200 px-1 rounded text-sm;
-	}
-
-	blockquote {
-		@apply border-l-4 border-gray-300 pl-4 italic text-gray-600 my-4;
-	}
-
-	ul {
-		@apply mb-4 pl-6 list-disc;
-	}
-
-	ol {
-		@apply mb-4 pl-6 list-decimal;
-	}
-
-	li {
-		@apply mb-2;
-	}
-}
-
+/* @layer typography { */
+/* 	a { */
+/* 		@apply text-blue-600 hover:text-blue-800; */
+/* 	} */
+/**/
+/* 	p:not(:last-child):not(:has(> blockquote)) { */
+/* 		@apply leading-relaxed mb-4; */
+/* 	} */
+/**/
+/* 	strong { */
+/* 		@apply font-semibold; */
+/* 	} */
+/**/
+/* 	h1, h2, h3, h4, h5, h6 { */
+/* 		@apply font-semibold mt-6 mb-2; */
+/* 	} */
+/**/
+/* 	pre { */
+/* 		@apply bg-gray-900 p-4 rounded wrap-break-word overflow-auto text-sm mb-4; */
+/* 	} */
+/**/
+/* 	code:not(pre code) { */
+/* 		@apply bg-neutral-800 shadow-sm shadow-neutral-700 px-1 rounded text-sm; */
+/* 	} */
+/**/
+/* 	blockquote { */
+/* 		@apply border-l-2 border-neutral-600 bg-neutral-900 p-4 italic text-neutral-200 my-4 rounded-lg; */
+/* 	} */
+/**/
+/* 	ul { */
+/* 		@apply mb-4 pl-6 list-disc; */
+/* 	} */
+/**/
+/* 	ol { */
+/* 		@apply mb-4 pl-6 list-decimal; */
+/* 	} */
+/**/
+/* 	li { */
+/* 		@apply mb-2; */
+/* 	} */
+/* } */
+/**/

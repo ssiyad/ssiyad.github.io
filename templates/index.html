@@ -1,16 +1,17 @@
-{% extends "base.html" %}
+{% extends "base_layout.html" %}
 
-{% block content %}
-  <div class="space-y-8">
-    <div class="flex flex-wrap gap-2">
-      {% for tech in config.extra.tech %}
-        <div
-          class="font-medium text-xs rounded-md bg-gray-100 px-2 py-1 shadow-sm font-mono"
+{% block main %}
+  <div class="space-y-2">
+    {% for page in section.pages %}
+      <div>
+        <a
+          class="font-medium hover:underline underline-offset-4 cursor-pointer"
+          href="{{ page.permalink }}"
         >
-          {{ tech }}
-        </div>
-      {% endfor %}
-    </div>
-    <div>{{ section.content | safe }}</div>
+          {{ page.title }}
+        </a>
+        <div class="text-sm">{{ page.date | date(format="%B %d, %Y") }}</div>
+      </div>
+    {% endfor %}
   </div>
 {% endblock %}

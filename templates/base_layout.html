@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="w-max mx-auto my-16 space-y-4">
+    <div class="flex gap-4">
+      <div class="space-y-4">
+        <div>
+          <h1 class="text-3xl font-medium">Sabu Siyad's Blog</h1>
+        </div>
+        <div class="w-2xl border-r-2 border-red-100">
+          {% block main %}
+          {% endblock %}
+        </div>
+      </div>
+      <div class="w-xs">
+        <div class="flex flex-col items-center gap-4">
+          <img
+            src="https://avatars.githubusercontent.com/u/28098330?v=4"
+            class="size-40 rounded-md"
+          />
+          <p class="text-center font-medium">Hello, I am Sabu Siyad.</p>
+          <div class="space-y-2">
+            <div>
+              <div class="text-xs capitalize font-mono">Email</div>
+              <a class="font-medium">hello@ssiyad.com</a>
+            </div>
+            <div>
+              <div class="text-xs capitalize font-mono">LinkedIn</div>
+              <a class="font-medium">@ssiyad</a>
+            </div>
+            <div>
+              <div class="text-xs capitalize font-mono">BluSky</div>
+              <a class="font-medium">@ssiyad.com</a>
+            </div>
+            <div>
+              <div class="text-xs capitalize font-mono">GitHub</div>
+              <a class="font-medium">@ssiyad</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-sm text-center pt-2 border-t-2 border-emerald-100">
+      The content for this site is
+      <a
+        href="https://creativecommons.org/licenses/by-sa/2.0/"
+        class="font-medium"
+        >CC-BY-SA</a
+      >. The
+      <a href="https://github.com/ssiyad/ssiyad.github.io" class="font-medium"
+        >code for this site</a
+      >
+      is
+      <a href="https://opensource.org/licenses/MIT" class="font-medium">MIT</a>.
+    </footer>
+  </div>
+{% endblock %}
