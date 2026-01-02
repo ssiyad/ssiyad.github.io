@@ -17,7 +17,7 @@
       @apply font-medium underline underline-offset-4;
     }
     code:not(pre code) {
-      @apply px-1 bg-stone-900 shadow shadow-white/50 rounded-md text-sm;
+      @apply px-1 bg-stone-900 rounded-md text-sm;
     }
     pre {
       @apply text-sm p-2 my-2 overflow-auto bg-stone-900!;
