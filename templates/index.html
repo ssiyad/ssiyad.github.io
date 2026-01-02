@@ -1,7 +1,26 @@
 {% extends "base_layout.html" %}
 
+{% block header %}
+  <div class="flex items-center gap-4">
+    <img
+      src="https://avatars.githubusercontent.com/u/28098330?v=4"
+      class="size-20 rounded-xl"
+    />
+    <div>
+      <p class="font-medium text-white">Hello, I am Sabu Siyad.</p>
+      <p class="font-medium">
+        Security Engineer at
+        <a href="https://frappe.io" target="_blank">Frappe</a>
+      </p>
+    </div>
+  </div>
+{% endblock %}
+
 {% block main %}
   <div class="space-y-4 mb-4">
+    <div class="w-max text-white text-xl font-semibold border-b-2 border-brand">
+      Posts
+    </div>
     {% for page in section.pages %}
       <div>
         <a

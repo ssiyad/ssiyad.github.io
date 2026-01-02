@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-black text-white/80;
+    @apply bg-black text-white/80 container max-w-3xl mx-auto;
   }
   a {
     @apply hover:text-brand cursor-pointer text-white;
