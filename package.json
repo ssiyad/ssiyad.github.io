@@ -15,7 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "css:build": "tailwindcss -i ./styles/main.css -o ./public/main.css --minify",
+    "css:build": "tailwindcss -i ./styles/main.css -o ./static/main.css --minify",
     "css:watch": "tailwindcss -i ./styles/main.css -o ./public/main.css --watch"
   },
   "dependencies": {
