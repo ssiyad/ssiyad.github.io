@@ -7,14 +7,15 @@
         src="https://avatars.githubusercontent.com/u/28098330?v=4"
         class="size-20 rounded-xl"
       />
-      <div>
+      <div class="space-y-1">
         <p class="font-medium text-white">Hello, I am Sabu Siyad</p>
-        <p class="font-medium">
+        <p class="font-medium text-sm">
           Security Engineer at
           <a href="https://frappe.io" target="_blank">Frappe</a>.
         </p>
       </div>
     </div>
+    <div class="post">{{ section.content | safe }}</div>
     <ul class="space-y-4 mb-4">
       <div class="w-max text-xl font-semibold text-brand">Posts</div>
       {% for page in section.pages %}
