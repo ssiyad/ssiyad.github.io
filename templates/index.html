@@ -1,34 +1,33 @@
 {% extends "base_layout.html" %}
 
-{% block header %}
-  <div class="flex items-center gap-4">
-    <img
-      src="https://avatars.githubusercontent.com/u/28098330?v=4"
-      class="size-20 rounded-xl"
-    />
-    <div>
-      <p class="font-medium text-white">Hello, I am Sabu Siyad</p>
-      <p class="font-medium">
-        Security Engineer at
-        <a href="https://frappe.io" target="_blank">Frappe</a>.
-      </p>
-    </div>
-  </div>
-{% endblock %}
-
 {% block main %}
-  <ul class="space-y-4 mb-4">
-    <div class="w-max text-xl font-semibold text-brand">Posts</div>
-    {% for page in section.pages %}
-      <li class="space-y-1">
-        <a
-          class="block font-medium hover:underline underline-offset-4"
-          href="{{ page.permalink }}"
-        >
-          {{ page.title }}
-        </a>
-        <div class="text-sm">{{ page.date | date(format="%B %d, %Y") }}</div>
-      </li>
-    {% endfor %}
-  </ul>
+  <div class="space-y-4">
+    <div class="flex items-center gap-4">
+      <img
+        src="https://avatars.githubusercontent.com/u/28098330?v=4"
+        class="size-20 rounded-xl"
+      />
+      <div>
+        <p class="font-medium text-white">Hello, I am Sabu Siyad</p>
+        <p class="font-medium">
+          Security Engineer at
+          <a href="https://frappe.io" target="_blank">Frappe</a>.
+        </p>
+      </div>
+    </div>
+    <ul class="space-y-4 mb-4">
+      <div class="w-max text-xl font-semibold text-brand">Posts</div>
+      {% for page in section.pages %}
+        <li class="space-y-1">
+          <a
+            class="block font-medium hover:underline underline-offset-4"
+            href="{{ page.permalink }}"
+          >
+            {{ page.title }}
+          </a>
+          <div class="text-sm">{{ page.date | date(format="%B %d, %Y") }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock %}

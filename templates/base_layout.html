@@ -3,35 +3,10 @@
 {% block content %}
   <div class="my-16 space-y-4">
     <div class="space-y-4">
-      <a href="/" class="block">
-        <h1 class="text-3xl font-semibold">Sabu Siyad's Blog</h1>
-      </a>
-      {% block header %}
-      {% endblock %}
+      {% include "partials/header.html" %}
       {% block main %}
       {% endblock %}
     </div>
-    <footer class="text-sm text-center pt-4 border-t-2 border-brand">
-      The content for this site is
-      <a
-        href="https://creativecommons.org/licenses/by-sa/2.0/"
-        target="_blank"
-        class="font-medium"
-        >CC-BY-SA</a
-      >. The
-      <a
-        href="https://github.com/ssiyad/ssiyad.github.io"
-        target="_blank"
-        class="font-medium"
-        >code for this site</a
-      >
-      is
-      <a
-        href="https://www.gnu.org/licenses/gpl-3.0.en.html"
-        target="_blank"
-        class="font-medium"
-        >GPLv3</a
-      >.
-    </footer>
+    {% include "partials/footer.html" %}
   </div>
 {% endblock %}
