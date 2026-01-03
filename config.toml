@@ -13,17 +13,5 @@ build_search_index = true
 highlight_code = true
 
 [extra]
-name = "Sabu Siyad"
-avatar_url = "https://avatars.githubusercontent.com/u/28098330?v=4"
-designation = "Security Engineer"
-company = "Frappe"
-tech = ["JS/TS", "Python", "Go", "Rust"]
-
-[[extra.navigation]]
-name = "Home"
-url = "/"
-
-[[extra.navigation]]
-name = "Blog"
-url = "/blog"
+# Custom variables can be added here
 
