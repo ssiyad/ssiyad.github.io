@@ -63,9 +63,7 @@ imagined, we finally got in. This happened because of two things
 - There was nobody to check tickets
 - The atmosphere suddenly became so loud (became interesting)
 
-|![football](/media/blog/retrospect/football.jpg)|
-|:--:|
-|*Photo from Google. I was too immersed to click a picture*|
+![football](./football.jpg)
 
 I did not know which teams were playing, or at what time this will end. Any of
 decision is immediately followed by a regret check. I don't regret any of it,
@@ -109,9 +107,7 @@ a thing.
 > There is supposed to be a song in background iirc, but wasn't that case here.
 > I might be wrong tho. Maybe we need words to effectively communicate
 
-|![kathakali](/media/blog/retrospect/kathakali.jpg)|
-|:--:|
-|*Sorry for poor quality, had to zoom in with a mobile camera*|
+![kathakali](./kathakali.jpg)
 
 I was more invested in the music, acting and atmosphere. It was all dark except
 for a few lamps in the building. There was a [traditional fire lamp](https://en.wikipedia.org/wiki/Nilavilakku)
