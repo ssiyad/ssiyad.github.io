@@ -1,12 +1,26 @@
-{% extends "base.html" %}
+{% extends "block/templates/base_layout.html" %}
 
-{% block content %}
-  <div class="my-16 space-y-4">
-    <div class="space-y-4">
-      {% include "partials/header.html" %}
-      {% block main %}
-      {% endblock %}
-    </div>
-    {% include "partials/footer.html" %}
+{% block license_text %}
+  <div>
+    The content for this site is
+    <a
+      href="https://creativecommons.org/licenses/by-sa/2.0/"
+      target="_blank"
+      class="font-medium"
+      >CC-BY-SA</a
+    >. The
+    <a
+      href="https://github.com/ssiyad/ssiyad.github.io"
+      target="_blank"
+      class="font-medium"
+      >code for this site</a
+    >
+    is
+    <a
+      href="https://www.gnu.org/licenses/gpl-3.0.en.html"
+      target="_blank"
+      class="font-medium"
+      >GPLv3</a
+    >.
   </div>
 {% endblock %}

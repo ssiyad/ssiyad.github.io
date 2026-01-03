@@ -1,9 +1,12 @@
 # The URL the site will be built for
 base_url = "https://ssiyad.com"
 
+# The theme to use (if any)
+theme = "block"
+
 # The site title and description; used in feeds by default.
 title = "Sabu Siyad's Blog"
-description = ""
+description = "Thoughts, stories and ideas."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -18,4 +21,9 @@ highlight_code = true
 
 [extra]
 # Custom variables can be added here
+
+[extra.intro]
+heading = "Hello, I am Sabu Siyad"
+subheading = "Thoughts, stories and ideas."
+avatar_url = "https://avatars.githubusercontent.com/u/28098330?v=4"
 
