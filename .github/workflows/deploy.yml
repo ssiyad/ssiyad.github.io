@@ -1,4 +1,4 @@
-name: Build and deploy GH Pages
+name: Deploy
 
 on:
   push:
@@ -9,13 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v6
-      - name: build_css
+      - uses: actions/checkout@v6
+      - name: Build CSS
         run: |
+          cd themes/block
           npm ci
           npm run css:build
-      - name: build_and_deploy
+      - name: Build and Deploy
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
           PAGES_BRANCH: gh-pages
