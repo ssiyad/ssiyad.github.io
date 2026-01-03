@@ -46,6 +46,9 @@
   }
   .post {
     @apply leading-loose;
+    p {
+      @apply my-4;
+    }
     a {
       @apply font-medium underline underline-offset-4;
     }
