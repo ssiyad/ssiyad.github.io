@@ -53,7 +53,7 @@
       @apply px-1 bg-stone-900 rounded-md text-sm;
     }
     pre {
-      @apply text-sm p-2 my-2 overflow-auto bg-stone-900!;
+      @apply text-sm px-4 py-2 my-2 overflow-auto bg-stone-900!;
     }
     h1,
     h2,
@@ -63,11 +63,17 @@
     h6 {
       @apply font-semibold mt-4 mb-2 text-lg text-white;
     }
+    ul {
+      @apply list-disc list-inside my-2 ml-4;
+    }
+    ol {
+      @apply list-decimal list-inside my-2 ml-4;
+    }
     strong {
       @apply font-medium;
     }
     blockquote {
-      @apply border-l-2 border-brand italic p-2 my-2 bg-stone-900;
+      @apply border-l-2 border-brand italic py-2 px-4 my-2 bg-stone-900;
     }
   }
 }
