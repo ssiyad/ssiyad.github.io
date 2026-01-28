@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/main.css" rel="stylesheet" />
+    
+  <title>Veronika Decides To Try JavaScript - Sabu Siyad&#x27;s Blog</title>
+
+  </head>
+  <body>
+    
+  <div class="my-16 space-y-4">
+    <div class="space-y-4">
+      <div>
+  <a href="/">
+    <h1 class="text-3xl font-semibold font-head">Sabu Siyad&#x27;s Blog</h1>
+  </a>
+</div>
+
+      
+  <div>
+    <div class="text-xl font-semibold mb-1 text-brand font-head">
+      Veronika Decides To Try JavaScript
+    </div>
+    <div class="mb-4 font-medium w-max text-sm">
+      Posted on August 23, 2022
+    </div>
+    <div class="post mb-4"><p>That’s a joke, she didn’t. Instead, she decides to die only to meet a new world of infinite
+possibilities that awaited her. She is a character from Paulo Coelho’s stellar novel titled
+‘Veronika Decides to Die’. If you haven’t read it already, I suggest you do. It’s a good
+book with a very much relatable setting. Meanwhile, I thought it might make a good title so
+here we are.</p>
+<p>You might be thinking, what is this about then, if not Veronika? yes! it’s JavaScript! Even
+tho I’m not a big fan of JavaScript, I find it quite tinker-able and useful. JavaScript
+makes its way into almost everything, from front-end web development to smartphone
+applications. If you’re one of those who use VSCode, your editor runs on JavaScript. If you
+happen to use any cross-platform desktop applications, it is probably an electron app that
+renders JavaScript in a polished window. That being said, if you’re a JavaScript guru,
+please ignore the rest of this post, and wave your hands as you close this window. If
+you’re going to continue reading, let me welcome you to the problem and the reasons for it.</p>
+<h2 id="the-backstory">The Backstory</h2>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; </span><span style="color:#bf616a;">a </span><span>= </span><span style="color:#d08770;">1
+</span><span style="color:#d08770;">1
+</span><span>&gt; </span><span style="color:#bf616a;">b </span><span>= </span><span style="color:#d08770;">1
+</span><span style="color:#d08770;">1
+</span><span>&gt; </span><span style="color:#bf616a;">a </span><span>== </span><span style="color:#bf616a;">b
+</span><span style="color:#d08770;">true
+</span></code></pre>
+<p>This is good, both <code>a</code> and <code>b</code> have a value of <code>1</code> and when we check if <code>a</code> and <code>b</code>
+are equal (<code>==</code>), it returns <code>true</code> which means both <code>a</code> and <code>b</code> have equal values.
+Let's also note that,</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; typeof </span><span style="color:#bf616a;">a
+</span><span>&#39;</span><span style="color:#a3be8c;">number</span><span>&#39;
+</span><span>&gt; typeof </span><span style="color:#bf616a;">b
+</span><span>&#39;</span><span style="color:#a3be8c;">number</span><span>&#39;
+</span></code></pre>
+<p>And let's try,</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; </span><span style="color:#bf616a;">a </span><span>= {}
+</span><span>{}
+</span><span>&gt; </span><span style="color:#bf616a;">b </span><span>= {}
+</span><span>{}
+</span><span>&gt; </span><span style="color:#bf616a;">a </span><span>== </span><span style="color:#bf616a;">b
+</span><span style="color:#d08770;">false
+</span></code></pre>
+<p>Why wouldn't <code>a</code> and <code>b</code> not equal? They are both empty right? Well, as developer docs says,</p>
+<blockquote>
+<p>If the operands are both objects, return true only if both operands reference the same object.</p>
+</blockquote>
+<p>That means a and b have different memory addresses unlike,</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; </span><span style="color:#bf616a;">a </span><span>= </span><span style="color:#bf616a;">b </span><span>= {}
+</span><span>{}
+</span><span>&gt; </span><span style="color:#bf616a;">a </span><span>== </span><span style="color:#bf616a;">b
+</span><span style="color:#d08770;">true
+</span></code></pre>
+<p>where a point to b and equality is satisfied. In the case of primitive values like in the first
+case, we have a different condition that says,</p>
+<blockquote>
+<p>If the operands have the same type, they are compared as follows:</p>
+</blockquote>
+<ul>
+<li><code>String</code>: return <code>true</code> only if both operands have the same characters in the same order.</li>
+<li><code>Number</code>: return <code>true</code> only if both operands have the same value. <code>+0</code> and <code>0</code> are
+treated as the same value. If either operand is <code>NaN</code>, return <code>false</code>.</li>
+<li><code>Boolean</code>: return <code>true</code> only if operands are both <code>true</code> or both <code>false</code>.</li>
+</ul>
+<h2 id="the-problem">The Problem</h2>
+<p>We know that,</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; typeof new Date()
+</span><span>&#39;</span><span style="color:#a3be8c;">object</span><span>&#39;
+</span></code></pre>
+<p>and let's try,</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; new Date() == new Date()
+</span><span style="color:#d08770;">false
+</span></code></pre>
+<p>This is known since both have different memory addresses and variables referencing different
+objects do not satisfy equality. But then we can,</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; new Date() &lt;= new Date() &amp;&amp; new Date() &gt;= new Date()
+</span><span style="color:#d08770;">true
+</span></code></pre>
+<p>which to be frank, looks like an abomination but helps me spit this point. This essentially
+means we have equality satisfied but at a very high cost. But why would this work when ==
+doesn’t? Because we have a different algorithm for &lt; and &gt;. From developer docs,</p>
+<blockquote>
+<p>First, objects are converted to primitives using Symbol.ToPrimitive with the hint parameter
+be 'number'.</p>
+</blockquote>
+<p>If both values are strings, they are compared as strings, based on the values of the Unicode
+code points they contain. Otherwise JavaScript attempts to convert non-numeric types to
+numeric values: Boolean values true and false are converted to 1 and 0 respectively. null is
+converted to 0. undefined is converted to NaN. Strings are converted based on the values they
+contain, and are converted as NaN if they do not contain numeric values. If either value is
+NaN, the operator returns false. Otherwise the values are compared as numeric values.</p>
+<p>So what <code>&lt;</code> and <code>&gt;</code> does is converting the date object to its numerical value, which is the
+number of milliseconds between 1 January 1970 00:00:00 UTC and the given date aka the
+epoch.* JavaScript use <code>Date.prototype.valueOf()</code> behind the scenes to convert a date object
+to a primitive value. But we can use <code>Date.prototype.getTime()</code> since <code>Date.prototype.valueOf()</code>
+is usually called internally by JavaScript and not explicitly in code.</p>
+<h2 id="the-solution">The Solution</h2>
+<p>Now we know what was wrong, and how we should actually equality check date objects</p>
+<pre data-lang="javascript" style="background-color:#2b303b;color:#c0c5ce;" class="language-javascript "><code class="language-javascript" data-lang="javascript"><span>&gt; new Date().</span><span style="color:#96b5b4;">getTime</span><span>() == new Date().</span><span style="color:#96b5b4;">getTime</span><span>()
+</span><span style="color:#d08770;">true
+</span></code></pre>
+<h2 id="that-s-it">That's it!</h2>
+<p>JavaScript is a weird programming language to learn, but it's also a fun experience. So if you
+decide to try it, like Veronika, I'd recommend you to play with its core, there is a lot to
+explore. Thanks for reading!</p>
+</div>
+  </div>
+
+    </div>
+    <footer class="text-sm text-center pt-4 border-t-2 border-brand space-y-1">
+      <div>
+        
+  <div>
+    The content for this site is
+    <a
+      href="https://creativecommons.org/licenses/by-sa/2.0/"
+      target="_blank"
+      class="font-medium"
+      >CC-BY-SA</a
+    >. The
+    <a
+      href="https://github.com/ssiyad/ssiyad.github.io"
+      target="_blank"
+      class="font-medium"
+      >code for this site</a
+    >
+    is
+    <a
+      href="https://www.gnu.org/licenses/gpl-3.0.en.html"
+      target="_blank"
+      class="font-medium"
+      >GPLv3</a
+    >.
+  </div>
+
+      </div>
+      <div class="font-head">
+  &mdash; Crafted with
+  <a href="https://www.getzola.org/" target="_blank" class="font-medium">
+    Zola
+  </a>
+  and
+  <a href="https://github.com/ssiyad/block" target="_blank" class="font-medium">
+    Block
+  </a>
+  &mdash;
+</div>
+
+    </footer>
+  </div>
+
+  </body>
+</html>

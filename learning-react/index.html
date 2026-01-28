@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/main.css" rel="stylesheet" />
+    
+  <title>Learning and Loving React - Sabu Siyad&#x27;s Blog</title>
+
+  </head>
+  <body>
+    
+  <div class="my-16 space-y-4">
+    <div class="space-y-4">
+      <div>
+  <a href="/">
+    <h1 class="text-3xl font-semibold font-head">Sabu Siyad&#x27;s Blog</h1>
+  </a>
+</div>
+
+      
+  <div>
+    <div class="text-xl font-semibold mb-1 text-brand font-head">
+      Learning and Loving React
+    </div>
+    <div class="mb-4 font-medium w-max text-sm">
+      Posted on February 14, 2025
+    </div>
+    <div class="post mb-4"><p>Interestingly enough, React was my first attempt at frontend web development,
+back in 2019. It didn't take me much to understand the basics then, but it
+didn't excite me either. I was in college at the time, having fun with writing
+Telegram bots and command line tools. Colors in an html file did not really
+concern me but I tried, and failed. But after 5 years and a lot of
+<a href="https://vuejs.org/">Vue</a>, I'm back in the game. This time though its a bit
+different. The nuances of CSS and insanity of user experience is much more
+apparent to me.</p>
+<p>This is my story of learning and loving <a href="https://react.dev/">React</a>.</p>
+<h2 id="the-first-attempt">The first attempt</h2>
+<p>Back when I tried to learn React, it was preferring a class based approach. I
+was not familiar with JavaScript classes at the time. Moreover, it felt somewhat
+different from all the other frameworks I have seen before. But since it was my
+first time checking out any frontend web framework, I couldn't really expect
+anything. My tech stack at the time was mostly <a href="https://nestjs.com/">NestJs</a>,
+<a href="https://flask.palletsprojects.com/en/stable/">Flask</a> and
+<a href="https://gin-gonic.com/">Gin</a>. Those frameworks, each from different languages,
+were beautifully written. Examples were great and tips and tricks were really
+helpful. Even if I tried, I couldn't write bad code in flask. Maybe because I
+loved python, or because it was very lite weight, or because it was a backend
+framework. Mind you, backend developers are obsessed with code quality and
+overall hygiene. This is were I started my career, and this initial part
+influenced me from there onwards.</p>
+<p>React felt nothing like those frameworks. The getting started documentation was
+decent enough, but not in a level of NestJS, or Flask, or Gin. Maybe there was
+some other documentation I could check but I certainly didn't see any. It does
+not mean the React community is lacking any resources. There are plenty of
+medium posts, video tutorials, udemy courses and many more. But an official
+documentation, that too a simple one, is an important first step in a long
+journey. I don't remember building anything in React at the time, except a
+counter, which is what every one us build as a first project.</p>
+<p>My venture with React then came to quick stop. I could almost say the initial
+novelty vanished off very quickly. The only outcome of that trial is cementing
+my belief that backend developers and technologies are superior. I do realise I
+was wrong, and every piece of technology is important. But lets fast forward 5
+years into 2024, and I'm going to try React again.</p>
+<h2 id="once-more">Once more</h2>
+<p>The year is 2024, month of September and the occasion is work. It is important
+to understand that I had an option between Vue or React, and I was fairly good
+with Vue at this point. But I chose React. Who does not love some challenge? I
+was practicing some React here and there for some some. I wrote a counter
+(again) and a tic tac toe game in React, which was a decent experience. React
+suddenly did not feel as bad how I felt before, so I wanted to continue, have a
+go at something I couldn't crack before.</p>
+<h2 id="users-as-a-service">Users as a service</h2>
+<p>I already told you that I was fairly comfortable with Vue. I'll tell you about
+that later, in another post, maybe. But the exposure to one frontend web
+framework taught me something. The way you think when writing user facing
+software is different from that of backend (hidden) frameworks. Honestly, <em>we
+are the only industry where customers are called users</em> and a for a good reason.
+<em>People use our product, and we use them. They are our lab rats. They are
+idiots. They are numbers</em>. A common man (or woman) does not care how good your
+code is. They don't care if your method is performant. They want to see things.
+They want things in the way they expect it to be. You can try it yourself. If
+you are a backend developer with zero interest in user facing stuff, build
+something you think you are efficient and give them to people for free. You can
+have plenty of never expecting feedback quickly. I would say it is important to
+touch grass once in a while, and I did, with Vue. And it made my React learning
+a little bit better.</p>
+<h2 id="css">CSS</h2>
+<p>I hated CSS. It never made sense to me. But at some point in my career, I was
+forced to embrace it and that changed my perspective. Don't get me wrong, CSS is
+still somewhat weird, but I do see how people do it, how we can use it and how
+good it is. Most of my CSS experience is with
+<a href="https://tailwindcss.com/">Tailwind</a>. Without it I couldn't call myself a CSS
+ninja. We could almost say Tailwind is synonymous with CSS these days. But
+enough about it, React don't need CSS to work.</p>
+<h2 id="from-a-vue-perspective">From a Vue perspective</h2>
+<p>Even though I don't want to have a bias towards Vue, it is almost impossible to
+do the comparison. And this comparison is especially relevant when TypeScript is
+involved. I assume you know what TypeScript is and why it is needed. I won't be
+killing your time preaching something you already know.</p>
+<blockquote>
+<p>Vue supports TypeScript but React is TypeScript.</p>
+</blockquote>
+<p>The goodness of typing, whole of it, is readily available in React. This is no
+magic, React is simply a collection of functions that compile into native
+JavaScript, while Vue do some magic to convert
+<a href="https://news.ycombinator.com/item?id=15340300">Vue DSL</a> to JavaScript. The
+difference is that the developer experience, at-least at the surface level, is
+much better with React. You use native array map to loop through your list of
+items, unlike magic in Vue. This make React somewhat east to pick up.</p>
+<h2 id="hooks">Hooks</h2>
+<p>But but! Why wasn't I able to learn this thing some time ago? Well the answer
+mostly is hooks. Hooks are a newer addition to React, and these tiny blocks of
+logic replaced classes. So everything is a function now, and fortunately it felt
+very similar to what I did with Vue. I feel hooks and functions are much better
+than classes. I personally feel the code is much more splittable now, and it
+kind of helps with bigger codebases. But do not take my word for it, for I am
+still learning the framework. Hooks brings their own chaos though. There are
+annoying rules I have to follow when writing components. I don't know why they
+have to be there but I'm sure there is a reason.</p>
+<h2 id="ecosystem">Ecosystem</h2>
+<p>The ecosystem! How can I not talk about the React ecosystem? If there something
+you want, there is a plugin for that in React. Whether you want design systems,
+tooling or anything remotely related to React, it is there. All you have to do
+is a basic web search. I love <a href="https://ui.shadcn.com/">shadcn/ui</a>, I love
+<a href="https://zustand-demo.pmnd.rs/">Zustand</a> and I'm sure there are plenty of other
+such plugins we will love.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>I am learning and loving React at the moment. But there are annoyances too.
+There is a lack of overall code hygiene. There are signs of mediocrity. But as
+someone said, this is no time for hate. That comes later.</p>
+<p>Adios!</p>
+</div>
+  </div>
+
+    </div>
+    <footer class="text-sm text-center pt-4 border-t-2 border-brand space-y-1">
+      <div>
+        
+  <div>
+    The content for this site is
+    <a
+      href="https://creativecommons.org/licenses/by-sa/2.0/"
+      target="_blank"
+      class="font-medium"
+      >CC-BY-SA</a
+    >. The
+    <a
+      href="https://github.com/ssiyad/ssiyad.github.io"
+      target="_blank"
+      class="font-medium"
+      >code for this site</a
+    >
+    is
+    <a
+      href="https://www.gnu.org/licenses/gpl-3.0.en.html"
+      target="_blank"
+      class="font-medium"
+      >GPLv3</a
+    >.
+  </div>
+
+      </div>
+      <div class="font-head">
+  &mdash; Crafted with
+  <a href="https://www.getzola.org/" target="_blank" class="font-medium">
+    Zola
+  </a>
+  and
+  <a href="https://github.com/ssiyad/block" target="_blank" class="font-medium">
+    Block
+  </a>
+  &mdash;
+</div>
+
+    </footer>
+  </div>
+
+  </body>
+</html>
