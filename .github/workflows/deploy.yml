@@ -5,6 +5,12 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write
+
+env:
+  ZOLA_VERSION: 0.23.6
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,8 +23,24 @@ jobs:
           cd themes/block
           npm ci
           npm run css:build
-      - name: Build and Deploy
-        uses: shalzz/zola-deploy-action@v0.21.0
+      # Block needs get_env, which no zola-deploy-action release has yet
+      - name: Install Zola
+        run: |
+          curl -sSL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | sudo tar xz -C /usr/local/bin
+          zola --version
+      - name: Build
+        run: zola build
         env:
-          PAGES_BRANCH: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to gh-pages
+        run: |
+          cd public
+          touch .nojekyll
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy ${GITHUB_SHA}"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
