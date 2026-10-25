@@ -2,6 +2,7 @@
 title: Spacing Hard
 description: I casually tried to clean my laptop space bar and it backfired.
 date: 2025-02-22T05:29:32.222Z
+aliases: ["/macbook-space/"]
 ---
 This is going to be short. So I wake early in the morning, had breakfast and
 opened my laptop. The machine is a 2020 Macbook Air M1. It is a beast when it
@@ -20,7 +21,7 @@ As a self proclaimed Google (re)searcher, I tried my best at finding resources
 on how to do this stuff. I found some Reddit posts, with some guidance but none
 of them really helped. But one of them had a link to this video which did help!
 
-{{ youtube(video_id="cXfOYCrDLvk", start_at=669) }}
+{{ <youtube video_id="cXfOYCrDLvk" start_at={669} /> }}
 
 The process is not that hard. It just takes some practice. All it took is a
 little push at the right point. My space bar is back to it's former glory now.

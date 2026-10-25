@@ -1,6 +1,7 @@
 +++
 title = "Reboot"
 date = "2026-01-03"
+aliases = ["/reboot/"]
 +++
 
 This is another attempt at rebooting my writing habits. I tried to write blog
