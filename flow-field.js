@@ -1,11 +1,13 @@
 // <flow-field>: particles drift along a slowly changing noise field and
-// leave fading ink trails. Colours and density come from CSS custom
-// properties, so the page's light and dark themes restyle it.
+// leave fading trails. Colours, trail length and density come from CSS
+// custom properties, so the page's light and dark themes restyle it.
 (() => {
   const STEP = 1.2;
   const TIME_STEP = 0.0025;
   const NOISE_SCALE = 0.0035;
-  const GOLD_SHARE = 0.3;
+  // Trail segments are batched into this many opacity steps, so a frame
+  // needs one stroke per colour and step, not one per segment.
+  const FADE_STEPS = 8;
   // With reduced motion, run this many frames once and show the result.
   const STILL_FRAMES = 150;
   // A reset clears the field, so wait for a window drag to settle.
@@ -73,7 +75,8 @@
       const count = Math.round((this.w * this.h) / this.palette.areaPerParticle);
       this.particles = Array.from({ length: count }, () => this.spawn({}));
       if (this.motion.matches) {
-        for (let i = 0; i < STILL_FRAMES; i++) this.draw();
+        for (let i = 0; i < STILL_FRAMES; i++) this.step();
+        this.render();
       } else {
         this.start();
       }
@@ -83,60 +86,94 @@
       const css = getComputedStyle(this);
       const read = (name) => css.getPropertyValue(name).trim();
       this.palette = {
-        ink: read("--flow-ink"),
-        gold: read("--flow-accent"),
+        colors: read("--flow-colors").split(/\s+/),
         alpha: Number(read("--flow-alpha")),
-        tail: Number(read("--flow-tail")),
+        trail: Number(read("--flow-trail")),
         areaPerParticle: Number(read("--flow-area-per-particle")),
       };
+    }
+
+    draw() {
+      this.step();
+      this.render();
+    }
+
+    step() {
+      this.time += TIME_STEP;
+      for (const p of this.particles) this.advance(p);
+    }
+
+    // Redraw every trail on a cleared canvas. Fading old pixels in place
+    // instead leaves a faint haze, because 8-bit alpha never rounds to 0.
+    render() {
+      const { ctx, palette } = this;
+      const paths = palette.colors.map(() =>
+        Array.from({ length: FADE_STEPS }, () => new Path2D()),
+      );
+      for (const p of this.particles) this.trace(p, paths[p.color]);
+
+      ctx.clearRect(0, 0, this.w, this.h);
+      ctx.lineWidth = 1;
+      ctx.lineCap = "round";
+      paths.forEach((steps, color) => {
+        ctx.strokeStyle = palette.colors[color];
+        steps.forEach((path, step) => {
+          ctx.globalAlpha = palette.alpha * (1 - step / FADE_STEPS);
+          ctx.stroke(path);
+        });
+      });
+      ctx.globalAlpha = 1;
+    }
+
+    // Add each segment of a trail to the path for its age.
+    trace(p, steps) {
+      const t = p.trail;
+      const last = t.length / 2 - 2;
+      for (let i = 0; i <= last; i++) {
+        const age = last - i + p.dead;
+        const step = Math.floor((age * FADE_STEPS) / this.palette.trail);
+        steps[step].moveTo(t[2 * i], t[2 * i + 1]);
+        steps[step].lineTo(t[2 * i + 2], t[2 * i + 3]);
+      }
     }
 
     spawn(p) {
       p.x = Math.random() * this.w;
       p.y = Math.random() * this.h;
       p.life = 80 + Math.random() * 220;
-      p.gold = Math.random() < GOLD_SHARE;
+      p.color = Math.floor(Math.random() * this.palette.colors.length);
+      p.trail = [p.x, p.y];
+      p.dead = 0;
       return p;
     }
 
-    draw() {
-      const { ctx, w, h, palette } = this;
-      this.time += TIME_STEP;
+    // A particle that leaves the screen or runs out of life stops, and its
+    // trail fades out before it starts again somewhere else.
+    advance(p) {
+      if (p.dead > 0 || --p.life < 0) {
+        p.dead++;
+      } else {
+        this.move(p);
+      }
 
-      // Fade towards transparent, not towards a colour, so the page
-      // background always shows through.
-      ctx.globalCompositeOperation = "destination-out";
-      ctx.globalAlpha = palette.tail;
-      ctx.fillRect(0, 0, w, h);
-
-      ctx.globalCompositeOperation = "source-over";
-      ctx.globalAlpha = palette.alpha;
-      ctx.lineWidth = 1;
-      ctx.lineCap = "round";
-      for (const p of this.particles) this.move(p);
-      ctx.globalAlpha = 1;
+      const t = p.trail;
+      while (t.length >= 4 && t.length / 2 - 2 + p.dead >= this.palette.trail) {
+        t.splice(0, 2);
+      }
+      if (p.dead > 0 && t.length < 4) this.spawn(p);
     }
 
     move(p) {
       const angle =
         noise(p.x * NOISE_SCALE, p.y * NOISE_SCALE, this.time) * Math.PI * 4 -
         Math.PI / 2;
-      const x = p.x + Math.cos(angle) * STEP;
-      const y = p.y + Math.sin(angle) * STEP;
-      const outside = x < -2 || x > this.w + 2 || y < -2 || y > this.h + 2;
-      if (--p.life < 0 || outside) {
-        this.spawn(p);
-        return;
-      }
+      p.x += Math.cos(angle) * STEP;
+      p.y += Math.sin(angle) * STEP;
+      p.trail.push(p.x, p.y);
 
-      const { ctx } = this;
-      ctx.strokeStyle = p.gold ? this.palette.gold : this.palette.ink;
-      ctx.beginPath();
-      ctx.moveTo(p.x, p.y);
-      ctx.lineTo(x, y);
-      ctx.stroke();
-      p.x = x;
-      p.y = y;
+      const outside =
+        p.x < -2 || p.x > this.w + 2 || p.y < -2 || p.y > this.h + 2;
+      if (outside) p.dead = 1;
     }
   }
 

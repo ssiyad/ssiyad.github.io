@@ -10,10 +10,11 @@
   --accent-pressed: #a06f24;
   --divider: color-mix(in srgb, #201f1d 16%, transparent);
 
-  --flow-ink: #201f1d;
-  --flow-accent: #b68235;
-  --flow-alpha: 0.22;
-  --flow-tail: 0.06;
+  /* Accents of the Acid theme, https://github.com/acid-theme/acid: Lactic
+     here and Citric in the dark scheme. */
+  --flow-colors: #df2910 #bd560b #9c6a0e #737914 #4a8143 #4978a4 #bc4d77;
+  --flow-alpha: 0.4;
+  --flow-trail: 60;
   --flow-area-per-particle: 1400;
 
   --font-display: "Zilla Slab", Georgia, serif;
@@ -29,9 +30,8 @@
     --accent-pressed: #facb8d;
     --divider: color-mix(in srgb, #f3f2f2 22%, transparent);
 
-    --flow-ink: #f3f2f2;
-    --flow-accent: #e1ad66;
-    --flow-tail: 0.08;
+    --flow-colors: #de5a48 #dd7b34 #d9a441 #a3ab2f #7cad76 #7d9cba #c5839c;
+    --flow-trail: 50;
     --flow-area-per-particle: 1850;
   }
 }
