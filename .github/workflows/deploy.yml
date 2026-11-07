@@ -23,7 +23,7 @@ jobs:
       - name: Collect site files
         run: |
           mkdir public
-          cp CNAME *.html *.css *.js public/
+          cp CNAME *.html *.css public/
           touch public/.nojekyll
       - name: Deploy to gh-pages
         run: |

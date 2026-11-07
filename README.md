@@ -1,6 +1,5 @@
 [Sabu Siyad](https://github.com/ssiyad)'s [website](https://ssiyad.com). Plain
-HTML, CSS and JavaScript, with no build step and no libraries. The fonts load
-from Google Fonts.
+HTML and CSS, with no build step, no JavaScript and no web fonts.
 
 The previous Zola blog is on the
 [`legacy`](https://github.com/ssiyad/ssiyad.github.io/tree/legacy) branch.
