@@ -1,5 +1,5 @@
 [Sabu Siyad](https://github.com/ssiyad)'s [website](https://ssiyad.com). Plain
-HTML and CSS, with no build step, no JavaScript and no web fonts.
+HTML, with no CSS, no build step, no JavaScript and no web fonts.
 
 The previous Zola blog is on the
 [`legacy`](https://github.com/ssiyad/ssiyad.github.io/tree/legacy) branch.
